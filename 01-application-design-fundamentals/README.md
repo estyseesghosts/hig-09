@@ -4,10 +4,10 @@ High-level principles and process guidance from the 2009 HIG.
 
 ## Chapters
 
-- [The Design Process](the-design-process.md) (p. 25) — Status: Reviewed
-- [Characteristics of Great Software](characteristics-of-great-software.md) (p. 31) — Status: Reviewed
-- [Human Interface Design](human-interface-design.md) (p. 39) — Status: Reviewed
-- [Prioritizing Design Decisions](prioritizing-design-decisions.md) (p. 53) — Status: Reviewed
+- [The Design Process](the-design-process.md) (p. 25) — Status: Source-verified
+- [Characteristics of Great Software](characteristics-of-great-software.md) (p. 31) — Status: Source-verified
+- [Human Interface Design](human-interface-design.md) (p. 39) — Status: Source-verified
+- [Prioritizing Design Decisions](prioritizing-design-decisions.md) (p. 53) — Status: Source-verified
 
 ## Use in this wiki
 
@@ -15,5 +15,6 @@ Capture foundational guidance that informs the retro recreation (design goals, t
 
 ## Research status
 
-- **State:** All four chapters researched and filled out (Status: Reviewed).
-- **Notes:** See individual chapter files for source notes with PDF page refs and implementation implications.
+- **State:** All four chapters are **Source-verified**.
+- **Not yet:** Implementation-ready specifications; the remaining open questions are project-scope decisions,
+  not source-coverage gaps.

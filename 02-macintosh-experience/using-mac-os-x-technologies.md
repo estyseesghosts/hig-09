@@ -2,7 +2,7 @@
 
 - **Part:** Part II: The Macintosh Experience
 - **PDF start page:** 67
-- **Status:** Reviewed
+- **Status:** Summarized
 
 ## Why this matters (retro recreation)
 

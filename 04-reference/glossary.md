@@ -1,7 +1,7 @@
 # Glossary
 
 - **PDF start page:** 375
-- **Status:** Reviewed
+- **Status:** Summarized
 
 ## Purpose
 

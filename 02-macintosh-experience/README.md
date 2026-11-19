@@ -4,9 +4,9 @@ Platform/environment context and Mac OS X technology guidance relevant to recrea
 
 ## Chapters
 
-- [The Mac OS X Environment](the-mac-os-x-environment.md) (p. 61) — Status: Reviewed
-- [Using Mac OS X Technologies](using-mac-os-x-technologies.md) (p. 67) — Status: Reviewed
-- [Software Installation and Software Updates](software-installation-and-software-updates.md) (p. 85) — Status: Reviewed
+- [The Mac OS X Environment](the-mac-os-x-environment.md) (p. 61) — Status: Summarized
+- [Using Mac OS X Technologies](using-mac-os-x-technologies.md) (p. 67) — Status: Summarized
+- [Software Installation and Software Updates](software-installation-and-software-updates.md) (p. 85) — Status: Mapped
 
 ## Use in this wiki
 
@@ -14,8 +14,10 @@ Track environment behaviors, system integrations, and conventions that shape how
 
 ## Research status
 
-- **State:** All three chapters researched and filled out (Status: Reviewed).
-- **Notes:** See individual chapter files for source notes with PDF page refs and implementation implications.
+- **State:** The Mac OS X Environment and Using Mac OS X Technologies are **Summarized**; Software Installation
+  and Software Updates is **Mapped**.
+- **Not yet:** Source-verify the compressed environment/technology subsections and expand installation guidance
+  (pp. 85-92) beyond its section-level outline.
 
 ## Retro recreation takeaways
 

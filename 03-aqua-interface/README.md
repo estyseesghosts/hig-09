@@ -4,15 +4,15 @@ Concrete interaction, visual, and control-level guidance for Aqua-era UI.
 
 ## Chapters
 
-- [User Input](user-input.md) (p. 97) — Status: Reviewed
-- [Drag and Drop](drag-and-drop.md) (p. 121) — Status: Reviewed
-- [Text](text.md) (p. 129) — Status: Reviewed
-- [Icons](icons.md) (p. 139) — Status: Reviewed
-- [Pointers](pointers.md) (p. 161) — Status: Reviewed
-- [Menus](menus.md) (p. 165) — Status: Reviewed
-- [Windows](windows.md) (p. 191) — Status: Reviewed
-- [Controls](controls.md) (p. 255) — Status: Reviewed
-- [Layout Guidelines](layout-guidelines.md) (p. 347) — Status: Reviewed
+- [User Input](user-input.md) (p. 97) — Status: Summarized
+- [Drag and Drop](drag-and-drop.md) (p. 121) — Status: Source-verified
+- [Text](text.md) (p. 129) — Status: Summarized
+- [Icons](icons.md) (p. 139) — Status: Summarized
+- [Pointers](pointers.md) (p. 161) — Status: Source-verified
+- [Menus](menus.md) (p. 165) — Status: Source-verified
+- [Windows](windows.md) (p. 191) — Status: Summarized
+- [Controls](controls.md) (p. 255) — Status: Summarized
+- [Layout Guidelines](layout-guidelines.md) (p. 347) — Status: Source-verified
 
 ## Use in this wiki
 
@@ -20,8 +20,22 @@ This is the primary section for implementation-facing notes: component behavior,
 
 ## Research status
 
-- **State:** All nine chapters researched and filled out (Status: Reviewed).
-- **Notes:** See individual chapter files for source notes with PDF page refs and implementation implications.
+- **State:** Drag and Drop, Pointers, Menus, and Layout Guidelines are **Source-verified**. User Input, Text,
+  Icons, Windows, and Controls are **Summarized**.
+- **Not yet:** Close the gaps listed below before treating any part of this section as implementation-ready.
+
+## Open items
+
+- [ ] Text: labels, capitalization, contractions, abbreviations, and developer terms (pp. 135-138) are still
+      outline-level.
+- [ ] Windows: Open, Choose, Print, and Page Setup dialogs, dialog focus/default/cancel rules, and sheet-vs-
+      application-modal decisions still need source notes.
+- [ ] Controls: selection controls (pp. 280-310), indicators (pp. 310-321), text controls (pp. 321-328), view
+      controls (pp. 329-341), and grouping (pp. 341-345) are summarized at outline level.
+- [ ] User Input: keyboard, selection, and text-editing subsections are compressed into broad notes.
+- [ ] Icons: icon-creation and system-provided-image subsections need verification.
+- [ ] Drag and Drop: add acceptance tests and cross-links to `pointers.md` and `user-input.md`; source coverage
+      itself is complete.
 
 ## Retro recreation takeaways
 
@@ -32,7 +46,3 @@ This is the primary section for implementation-facing notes: component behavior,
   email-like input; search fields with Cmd-Option-F.
 - View controls: disclosure triangles/buttons, list/column/split/tab views; tab label specs; grouping controls.
 - Window-frame vs. window-body control split (only icon buttons, action menus, search fields cross over).
-
-## Open items
-
-- [ ] Selection controls sub-sections (p. 280–310) still need fuller source notes.

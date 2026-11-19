@@ -2,7 +2,7 @@
 
 - **Part:** Part III: The Aqua Interface
 - **PDF start page:** 191
-- **Status:** Reviewed
+- **Status:** Summarized
 
 ## Why this matters (retro recreation)
 

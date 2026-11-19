@@ -2,7 +2,7 @@
 
 - **Part:** (preceding Parts I–III)
 - **PDF start page:** 19
-- **Status:** Reviewed
+- **Status:** Source-verified
 
 ## Purpose
 

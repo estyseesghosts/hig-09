@@ -1,7 +1,7 @@
 # Revision History
 
 - **PDF start page:** 383
-- **Status:** Reviewed
+- **Status:** Summarized
 
 ## Purpose
 

@@ -2,7 +2,7 @@
 
 - **Part:** Part I: Application Design Fundamentals
 - **PDF start page:** 31
-- **Status:** Reviewed
+- **Status:** Source-verified
 
 ## Why this matters (retro recreation)
 

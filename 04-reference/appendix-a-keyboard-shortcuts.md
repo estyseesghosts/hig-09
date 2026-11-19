@@ -1,7 +1,7 @@
 # Appendix A: Keyboard Shortcuts Quick Reference
 
 - **PDF start page:** 367
-- **Status:** Reviewed
+- **Status:** Mapped
 
 ## Purpose
 

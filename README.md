@@ -1,6 +1,6 @@
 # HIG 2009 Retro Recreation Wiki
 
-Private research wiki for a retro recreation project based on **Apple Human Interface Guidelines (2009)**.
+Research wiki for a retro recreation project based on **Apple Human Interface Guidelines (2009)**.
 
 ## Source
 
@@ -25,24 +25,67 @@ See [`00-source/README.md`](00-source/README.md) for source details and lookup w
 - [`templates/`](templates/) — reusable note templates
 - [`notes/`](notes/) — cross-cutting notes, research backlog, and retro recreation component inventory
 
-## Status
+## Research status definitions
+
+Status describes **source coverage**, not code readiness. A chapter does not earn a higher status because it is
+long or because a research pass happened; it must meet the criteria below.
+
+| Status | Meaning | Minimum criteria |
+| --- | --- | --- |
+| **Mapped** | The chapter skeleton exists. | TOC sections and page ranges are recorded; source notes may be topic lists or one-line pointers. No claim that the guidance is captured. |
+| **Summarized** | The chapter is useful for orientation. | Every major TOC section has a source-note summary, but at least one subsection is outline-level, unread, or unverified. Not sufficient for implementation. |
+| **Source-verified** | The chapter's source coverage is complete. | Every TOC section and subsection has been read against the PDF; page references have been checked; remaining open questions are about project scope, not missing source evidence. |
+| **Implementation-ready** | The chapter can drive code and tests. | Source-verified, plus testable requirements (states, labels, dimensions, keyboard/pointer behavior) for every component or pattern it covers, with no unresolved source ambiguities. |
+
+`Reviewed` is retired because it meant everything from "one bullet per section" to "page-by-page notes" and
+therefore meant nothing. Do not reintroduce it.
+
+## Project status
 
 - [x] Repository identified as research/wiki workspace
 - [x] Initial scaffold created
-- [x] Source skim / section mapping (TOC read via pdf_get_toc; all chapters now mapped)
-- [x] Chapter-by-chapter research notes (Introduction, Parts I–III, Reference all researched/filled)
-- [x] Retro recreation takeaways / component inventory (see `notes/component-inventory.md`)
-- [x] Accuracy/coverage audit pass vs. source (fixed Mobility page ref, completed HID sub-sections, added missing Menus source notes, expanded Windows scroll/drawer notes)
+- [x] Source skim / section mapping (TOC read; all chapters mapped)
+- [x] Chapter-by-chapter first pass (all chapters have notes; coverage varies by chapter)
+- [x] Retro recreation takeaways / component inventory drafted (`notes/component-inventory.md`)
+- [x] Reproducible page-reference audit (`notes/page-reference-audit.md`, `tools/audit_page_refs.py`)
+- [ ] Complete source verification for every chapter (see the gaps below)
+- [ ] Implementation-ready specifications for every in-scope component
 
 ## Part status
 
-| Part | Range | Chapters | Status |
-| --- | --- | --- | --- |
-| Introduction | p. 19 | 1 | Reviewed |
-| I — Application Design Fundamentals | p. 23 | 4 | Reviewed |
-| II — The Macintosh Experience | p. 59 | 3 | Reviewed |
-| III — The Aqua Interface | p. 95 | 9 | Reviewed (see open items) |
-| Reference | p. 367 | 4 | Reviewed |
+| Part | Range | Chapters | Status | Main gaps |
+| --- | --- | --- | --- | --- |
+| Introduction | p. 19 | 1 | Source-verified | None |
+| I - Application Design Fundamentals | p. 23 | 4 | Source-verified | None |
+| II - The Macintosh Experience | p. 59 | 3 | Summarized | Installation is Mapped; environment/technology subsections are compressed |
+| III - The Aqua Interface | p. 95 | 9 | Summarized | Text, Windows, Controls, and User Input have outline-level subsections |
+| Reference | p. 367 | 4 | Summarized | Appendix A is Mapped; glossary/revision/index are selective by design |
+
+## Chapter status
+
+| Chapter | Status | Known gap |
+| --- | --- | --- |
+| [Introduction](00-source/introduction.md) | Source-verified | None |
+| [The Design Process](01-application-design-fundamentals/the-design-process.md) | Source-verified | None |
+| [Characteristics of Great Software](01-application-design-fundamentals/characteristics-of-great-software.md) | Source-verified | None |
+| [Human Interface Design](01-application-design-fundamentals/human-interface-design.md) | Source-verified | None |
+| [Prioritizing Design Decisions](01-application-design-fundamentals/prioritizing-design-decisions.md) | Source-verified | None |
+| [The Mac OS X Environment](02-macintosh-experience/the-mac-os-x-environment.md) | Summarized | Dock, Finder, multiple-user, and thread subsections are compressed |
+| [Using Mac OS X Technologies](02-macintosh-experience/using-mac-os-x-technologies.md) | Summarized | Many technology subsections are one-line summaries; Help pp. 81-84 is a cross-cutting task |
+| [Software Installation and Software Updates](02-macintosh-experience/software-installation-and-software-updates.md) | Mapped | Section-level outline only; needs pp. 85-92 expansion |
+| [User Input](03-aqua-interface/user-input.md) | Summarized | Keyboard, selection, and text-editing subsections are compressed into broad notes |
+| [Drag and Drop](03-aqua-interface/drag-and-drop.md) | Source-verified | Source coverage complete; needs acceptance tests and cross-links to pointers/user input |
+| [Text](03-aqua-interface/text.md) | Summarized | Labels, capitalization, contractions, abbreviations, and terminology (pp. 135-138) are outline-level |
+| [Icons](03-aqua-interface/icons.md) | Summarized | Icon-creation and system-provided-image subsections are summarized |
+| [Pointers](03-aqua-interface/pointers.md) | Source-verified | None |
+| [Menus](03-aqua-interface/menus.md) | Source-verified | None |
+| [Windows](03-aqua-interface/windows.md) | Summarized | Open/Choose/Print/Page Setup dialogs and dialog focus rules are missing |
+| [Controls](03-aqua-interface/controls.md) | Summarized | Selection, indicator, text, view, and grouping controls (pp. 280-345) are outline-level |
+| [Layout Guidelines](03-aqua-interface/layout-guidelines.md) | Source-verified | None |
+| [Appendix A: Keyboard Shortcuts](04-reference/appendix-a-keyboard-shortcuts.md) | Mapped | Table A-1 modifiers are missing; needs full sequence reconstruction |
+| [Glossary](04-reference/glossary.md) | Summarized | Term inventory is summarized, not a full entry-by-entry capture |
+| [Revision History](04-reference/revision-history.md) | Summarized | Recent release is detailed; older entries are grouped |
+| [Index (Research Notes)](04-reference/index-notes.md) | Summarized | Selected lookup entries only, by design |
 
 ## Conventions (suggested)
 

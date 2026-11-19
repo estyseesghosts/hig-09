@@ -1,7 +1,7 @@
 # Index (Research Notes)
 
 - **PDF start page:** 387
-- **Status:** Reviewed
+- **Status:** Summarized
 
 ## Purpose
 

@@ -2,6 +2,12 @@
 
 Use this file to queue focused extraction tasks so we can learn from the PDF incrementally.
 
+## Current authoritative status
+
+Chapter statuses and known gaps are defined and maintained in [`../README.md`](../README.md). This file records
+historical passes and queued work: a checked item means that pass happened, **not** that the chapter is
+`Source-verified`. Do not use the session log as a coverage claim.
+
 ## High-priority scaffolding follow-ups
 
 - [x] Skim TOC-derived chapter list and mark which chapters are most relevant to the retro recreation scope
@@ -25,7 +31,10 @@ Use this file to queue focused extraction tasks so we can learn from the PDF inc
 - [ ] Part III remaining: deeper source notes for Controls sub-sections not fully detailed (selection controls p. 280-310, indicators p. 310-321, text controls p. 321-328, view controls p. 329-341, grouping p. 341-345).
 - [ ] Cross-cutting Help/assistance research (not a book part): Apple Help pp. 81-84 (`02-macintosh-experience/using-mac-os-x-technologies.md`), Help menu p. 187 (`03-aqua-interface/menus.md`), Help button p. 276 and Help tags (`03-aqua-interface/controls.md`). The 2009 HIG has only three main parts; do not introduce a "Part IV."
 
-## Audit pass (accuracy/coverage verification)
+## Historical audit log
+
+These entries record individual passes. They are not chapter-level status claims; see `../README.md` for the
+authoritative status and remaining gaps.
 
 - [x] Verified source TOC (502 entries) and chapter/page mapping against wiki chapter files.
 - [x] Corrected Mobility page reference in Characteristics (was p. 38, actual p. 37).
