@@ -18,7 +18,7 @@ perceived performance, ease of use, appearance, reliability, and adaptability.
 - Reliability (p. 34)
 - Adaptability (p. 36)
 - Interoperability (p. 37)
-- Mobility (p. 38)
+- Mobility (p. 37)
 
 ## Source notes (with page refs)
 
