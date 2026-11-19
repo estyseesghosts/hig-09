@@ -58,6 +58,9 @@ spacing, alignment rules.
 ## Assets / examples to capture later
 
 - [ ] Capture layout figures (16-x) via pdf_render_pages for future screen recreation reference.
+- [ ] Use the [image inventory](../notes/image-inventory.md) for layout references: System Preferences
+      (#27-#30), Automator/Mail/GarageBand split views (#3, #20, #35), and the capture matrix's remaining
+      pane-margin and bottom-bar gaps.
 
 ## Open questions / follow-up extraction
 

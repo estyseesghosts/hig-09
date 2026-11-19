@@ -1034,6 +1034,8 @@ title uses sentence-style capitalization; 20 px window margin.
       controls); Figures 15-76 through 15-87 (disclosure, lists, tabs); Figures 15-88 through 15-90 (separators,
       group boxes).
 - [ ] Capture control screenshots from `../images/` (e.g. System Preferences panes) for fidelity reference.
+      See the [image inventory](../notes/image-inventory.md) for the exact rows and the capture matrix of
+      missing regular/small/mini, mixed, disabled, focus, and warning/critical states.
 
 ## Open questions / follow-up extraction
 

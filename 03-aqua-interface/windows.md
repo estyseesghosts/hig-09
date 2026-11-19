@@ -99,7 +99,10 @@ panel windows, title bars, toolbars, drawers, dialogs, save flows.
 
 ## Assets / examples to capture later
 
-- [ ] Capture window screenshots from `../images/` (e.g. System Preferences, TextEdit Open) for fidelity.
+- [ ] Trace every retained window screenshot in the [image inventory](../notes/image-inventory.md). Current
+      coverage: alerts (#8 Copy/Replace, #11 Eject Warning), Force Quit (#17), TextEdit Open dialog (#32), and
+      System Preferences panes (#27-#30). The inventory's capture matrix lists the missing active/inactive
+      window, focus-ring, sheet, and inspector states.
 
 <a id="dialogs"></a>
 

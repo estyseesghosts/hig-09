@@ -97,5 +97,7 @@ therefore meant nothing. Do not reintroduce it.
 ## Quick links
 
 - [Research backlog](notes/research-backlog.md)
+- [Component inventory](notes/component-inventory.md)
+- [Image and figure inventory](notes/image-inventory.md)
 - [Chapter notes template](templates/chapter-notes.md)
 - [Research note template](templates/research-note.md)

@@ -131,6 +131,9 @@ behavior, and contextual/Dock menus — highly fidelity-relevant.
 ## Assets / examples to capture later
 
 - [ ] Capture menu screenshots from images/ (Finder-Menu, Software-Update, etc.) for fidelity reference.
+      Retained examples and their provenance are catalogued in the
+      [image inventory](../notes/image-inventory.md): Finder application menu (#15) and Pages File menu (#36).
+      Open menus for File/Edit/View, disabled/checked items, submenus, and keyboard highlighting remain gaps.
 
 ## Open questions / follow-up extraction
 

@@ -63,6 +63,9 @@ implementation in the retro project.
 
 - [ ] Capture figures: Address Book people-picker (p. 67), animation sequences (p. 68), Colors window (p. 71),
   Fonts windows (p. 74), Dashboard widgets (p. 72), Spotlight results (p. 79-80).
+- [ ] Retained utility captures are catalogued in the
+  [image inventory](../notes/image-inventory.md): Activity Monitor, AppleScript Editor, Automator, Console,
+  Disk Utility, Network Utility, System Profiler, Help Viewer, and the 10.6.8 desktop.
 
 ## Open questions / follow-up extraction
 

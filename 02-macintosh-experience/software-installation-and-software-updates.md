@@ -288,6 +288,9 @@ Updates:
 - [ ] Figure 7-3: application-update preferences window (p. 91).
 - [ ] Figure 7-4: free-update alert (p. 92).
 - [ ] Figure 7-5: for-purchase upgrade alert (p. 93).
+- [ ] Retained installer/update captures are catalogued in the
+      [image inventory](../notes/image-inventory.md): Software Update main window and details (#23-#25) and the
+      Xcode/iOS SDK installer with Installation Alert (#34).
 
 ## Open questions / follow-up extraction
 

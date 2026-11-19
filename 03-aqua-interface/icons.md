@@ -70,6 +70,9 @@ target. Existing reference screenshots are in `../images/`.
 ## Assets / examples to capture later
 
 - [ ] Capture/curate icon assets for the recreated app; reuse HIG figures for reference.
+- [ ] Use the [image inventory](../notes/image-inventory.md) for retained icon examples: Dock/Stacks (#15,
+      #26), Xcode source-list icons (#33), and the 10.6.8 desktop (#37); capture the 16/32/48/128/512 px
+      comparison and selected-label states listed as gaps there.
 
 ## Open questions / follow-up extraction
 

@@ -142,7 +142,10 @@ test checks. Unlinked entries are still at source-note level. Page numbers refer
 
 - [ ] Capture HIG figures (toolbar, buttons, progress, indicators, text controls, disclosure, lists, tabs,
       separators/group boxes, layout).
-- [ ] Use `images/` (10-6-Snow-Leopard-*, Screenshot 2026-11-18 *) as reference screenshots.
+- [x] Catalogue every retained screenshot, its subject, dimensions, version evidence (known/unknown), and
+      missing states in `notes/image-inventory.md`.
+- [ ] Close the capture-matrix gaps: inactive windows, focus rings, mixed/disabled control states, sheets,
+      inspectors, open menus, and capacity/rating/relevance indicators.
 
 ## Open items
 
