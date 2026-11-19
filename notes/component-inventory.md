@@ -76,7 +76,8 @@ should implement or emulate.
 ## Input / interaction behaviors
 
 - [ ] Mouse: click, double-click, press-and-hold, drag (p. 97–98)
-- [ ] Keyboard: reserved vs recommended shortcuts, focus/navigation, type-ahead, key-repeat (p. 99–111)
+- [ ] Keyboard: reserved vs recommended shortcuts, focus/navigation, type-ahead, key-repeat (p. 99-111; full
+      Table A-1 reference in `04-reference/appendix-a-keyboard-shortcuts.md`)
 - [ ] Selection: methods, text/spreadsheet/graphics (p. 112–117)
 - [ ] Text editing: insert/delete/replace, intelligent cut/paste, passwords (p. 117–120)
 - [ ] Drag and drop: semantics, feedback, destinations, clippings (p. 121–127)

@@ -4,7 +4,7 @@ Back-of-book/reference sections for quick lookup during research and recreation.
 
 ## Sections
 
-- [Appendix A: Keyboard Shortcuts Quick Reference](appendix-a-keyboard-shortcuts.md) (p. 367) — Status: Mapped
+- [Appendix A: Keyboard Shortcuts Quick Reference](appendix-a-keyboard-shortcuts.md) (p. 367) - Status: Source-verified
 - [Glossary](glossary.md) (p. 375) — Status: Summarized
 - [Revision History](revision-history.md) (p. 383) — Status: Summarized
 - [Index (Research Notes)](index-notes.md) (p. 387) — Status: Summarized
@@ -16,6 +16,6 @@ Back-of-book/reference sections for quick lookup during research and recreation.
 
 ## Research status
 
-- **State:** Appendix A is **Mapped**; Glossary, Revision History, and Index are **Summarized**.
-- **Not yet:** Rebuild Appendix A from Table A-1 with complete modifier sequences (issue #3); expand glossary
-  entries only if a lookup need arises.
+- **State:** Appendix A is **Source-verified** (all 112 Table A-1 rows transcribed, pp. 368-374); Glossary,
+  Revision History, and Index are **Summarized**.
+- **Not yet:** Expand glossary entries only if a lookup need arises.

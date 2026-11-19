@@ -61,6 +61,9 @@ these are the exact behaviors the recreated UI should honor (or deliberately dev
   (Cmd-A Select All, Cmd-G Find Next, Cmd-Shift-P Page Setup, Cmd-Shift-S Save As, Cmd-Shift-V Paste as
   Quotation, Cmd-Shift-Z Redo; Table 8-5); users may remap shortcuts (Command-Option-W Finder Close All,
   Command-Option-M Minimize All).
+- p. 107 vs. p. 371 - **Source conflict:** Table 8-3 lists Command-H and Option-Command-H as reserved, but
+  Table A-1 omits the Apple icon for both. Treat them as reserved. The full Table A-1 transcription and all
+  discrepancies are in [Appendix A](../04-reference/appendix-a-keyboard-shortcuts.md).
 - p. 110 — Keyboard focus: default mode moves focus between fields that accept keyboard input; full keyboard
   access mode available; focus indicated with ring in Aqua/Graphite appearance color; in list views arrow
   keys open/close disclosure triangles; Shift-Tab reverse; Tab cycles in lists, Return can substitute.
