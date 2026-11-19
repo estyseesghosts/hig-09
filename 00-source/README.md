@@ -43,7 +43,7 @@ When doing targeted research, prefer narrow extraction over full reads:
 1. Start from TOC headings/page numbers.
 2. Search for specific terms/sections.
 3. Read only relevant pages/sections.
-4. Capture findings in the corresponding chapter stub with page references.
+4. Capture findings in the corresponding chapter notes with page references.
 5. Record unanswered questions or follow-up lookups in `../notes/research-backlog.md`.
 
 ## Notes

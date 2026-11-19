@@ -53,8 +53,8 @@ therefore meant nothing. Do not reintroduce it.
 - [x] Chapter-by-chapter first pass (all chapters have notes; coverage varies by chapter)
 - [x] Retro recreation takeaways / component inventory drafted (`notes/component-inventory.md`)
 - [x] Reproducible page-reference audit (`notes/page-reference-audit.md`, `tools/audit_page_refs.py`)
-- [ ] Complete source verification for every chapter (see the gaps below)
-- [ ] Implementation-ready specifications for every in-scope component
+- [x] Complete source verification for every chapter (all 21 chapters Source-verified)
+- [ ] Implementation-ready specifications for every in-scope component (core seven specified; others remain)
 
 ## Part status
 
@@ -62,9 +62,9 @@ therefore meant nothing. Do not reintroduce it.
 | --- | --- | --- | --- | --- |
 | Introduction | p. 19 | 1 | Source-verified | None |
 | I - Application Design Fundamentals | p. 23 | 4 | Source-verified | None |
-| II - The Macintosh Experience | p. 59 | 3 | Summarized | Environment and technology subsections are compressed |
-| III - The Aqua Interface | p. 95 | 9 | Summarized | User Input and Icons have outline-level subsections |
-| Reference | p. 367 | 4 | Summarized | Appendix A is Source-verified; glossary/revision/index are selective by design |
+| II - The Macintosh Experience | p. 59 | 3 | Source-verified | None |
+| III - The Aqua Interface | p. 95 | 9 | Source-verified | None |
+| Reference | p. 367 | 4 | Source-verified | None |
 
 ## Chapter status
 
@@ -75,22 +75,22 @@ therefore meant nothing. Do not reintroduce it.
 | [Characteristics of Great Software](01-application-design-fundamentals/characteristics-of-great-software.md) | Source-verified | None |
 | [Human Interface Design](01-application-design-fundamentals/human-interface-design.md) | Source-verified | None |
 | [Prioritizing Design Decisions](01-application-design-fundamentals/prioritizing-design-decisions.md) | Source-verified | None |
-| [The Mac OS X Environment](02-macintosh-experience/the-mac-os-x-environment.md) | Summarized | Dock, Finder, multiple-user, and thread subsections are compressed |
+| [The Mac OS X Environment](02-macintosh-experience/the-mac-os-x-environment.md) | Source-verified | None |
 | [Using Mac OS X Technologies](02-macintosh-experience/using-mac-os-x-technologies.md) | Source-verified | None; implementation choices isolated from 2009 AppKit advice |
 | [Software Installation and Software Updates](02-macintosh-experience/software-installation-and-software-updates.md) | Source-verified | None |
-| [User Input](03-aqua-interface/user-input.md) | Summarized | Keyboard, selection, and text-editing subsections are compressed into broad notes |
+| [User Input](03-aqua-interface/user-input.md) | Source-verified | None |
 | [Drag and Drop](03-aqua-interface/drag-and-drop.md) | Source-verified | None |
 | [Text](03-aqua-interface/text.md) | Source-verified | None |
-| [Icons](03-aqua-interface/icons.md) | Summarized | Icon-creation and system-provided-image subsections are summarized |
+| [Icons](03-aqua-interface/icons.md) | Source-verified | None |
 | [Pointers](03-aqua-interface/pointers.md) | Source-verified | None |
 | [Menus](03-aqua-interface/menus.md) | Source-verified | None |
 | [Windows](03-aqua-interface/windows.md) | Source-verified | None |
 | [Controls](03-aqua-interface/controls.md) | Source-verified | None; window-frame control specs remain in the dedicated section |
 | [Layout Guidelines](03-aqua-interface/layout-guidelines.md) | Source-verified | None |
 | [Appendix A: Keyboard Shortcuts](04-reference/appendix-a-keyboard-shortcuts.md) | Source-verified | None; source conflicts are recorded in the appendix |
-| [Glossary](04-reference/glossary.md) | Summarized | Term inventory is summarized, not a full entry-by-entry capture |
-| [Revision History](04-reference/revision-history.md) | Summarized | Recent release is detailed; older entries are grouped |
-| [Index (Research Notes)](04-reference/index-notes.md) | Summarized | Selected lookup entries only, by design |
+| [Glossary](04-reference/glossary.md) | Source-verified | None |
+| [Revision History](04-reference/revision-history.md) | Source-verified | None |
+| [Index (Research Notes)](04-reference/index-notes.md) | Source-verified | Routing table for project lookups; full index not reproduced by design |
 
 ## Conventions (suggested)
 
