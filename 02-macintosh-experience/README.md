@@ -4,24 +4,29 @@ Platform/environment context and Mac OS X technology guidance relevant to recrea
 
 ## Chapters
 
-- [The Mac OS X Environment](the-mac-os-x-environment.md) (p. 61) — Status: Summarized
-- [Using Mac OS X Technologies](using-mac-os-x-technologies.md) (p. 67) — Status: Summarized
-- [Software Installation and Software Updates](software-installation-and-software-updates.md) (p. 85) - Status: Source-verified
+- [The Mac OS X Environment](the-mac-os-x-environment.md) (p. 61) — Status: Source-verified
+- [Using Mac OS X Technologies](using-mac-os-x-technologies.md) (p. 67) — Status: Source-verified
+- [Software Installation and Software Updates](software-installation-and-software-updates.md) (p. 85) — Status: Source-verified
 
 ## Use in this wiki
 
-Track environment behaviors, system integrations, and conventions that shape how apps should look/behave in the target era.
+Track environment behaviors, system integrations, and conventions that shape how apps should look and behave in
+the target era.
 
 ## Research status
 
-- **State:** The Mac OS X Environment and Using Mac OS X Technologies are **Summarized**; Software Installation
-  and Software Updates is **Source-verified**.
-- **Not yet:** Source-verify the compressed environment and technology subsections.
+- **State:** all three chapters are **Source-verified**.
+- **Remaining work:** these chapters contain little numeric visual evidence. Pixel appearance (Dock, menu bar,
+  focus rings) still needs 10.6 captures rather than more reading. See the
+  [image inventory](../notes/image-inventory.md) and [revision history](../04-reference/revision-history.md)
+  for the edition boundary.
 
 ## Retro recreation takeaways
 
 - Always-on environment: don't rely on reboot/login items for user-level processes; avoid temp-file buildup.
-- Display floor: design for at least 1024x768 (Mac OS X runs as small as 800x600; 640x480 legacy floor).
-- Dock: window/Dock positioning, badging, notifications; Finder bundle/.app conventions.
-- Technology adoption: use system frameworks (Address Book, Bonjour, animation, Spotlight, speech, etc.) where
-  the recreation emulates the Mac platform.
+- Display floor: design for at least 800×600 and optimize for 1024×768; don't assume aspect ratio.
+- Dock: reserve Dock/menu-bar space for windows; badge for unobtrusive status; Dock activation follows the
+  no-windows → new window, minimized-only → expand last, otherwise bring-forward rule.
+- Finder: `.app` bundles, document extensions, and Quick Look-style previews are the visible integration points.
+- System technologies: the HIG tells Mac OS X apps to use OS frameworks; that is historical advice, not a
+  mandate for a cross-platform recreation. Each technology is marked PENDING in the chapter.
