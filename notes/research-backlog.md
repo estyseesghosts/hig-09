@@ -61,3 +61,4 @@ authoritative status and remaining gaps.
 - **Session 7:** Introduction notes added (p. 19-22); component inventory drafted; part/status mapping updated.
 - **Session 8:** Accuracy/coverage audit pass completed; identified and fixed Mobility page ref, HID sub-sections, Menus source notes, Windows scroll/drawer notes; committed as audit fix.
 - **Session 9:** Reproducible page-reference audit added (`notes/page-reference-audit.md`, `notes/hig-toc.tsv`, `tools/audit_page_refs.py`); corrected Scrolling Windows p. 225, Column Views p. 334, glossary end p. 381, Part IV Help backlog entry, and resolved Introduction checklist item.
+- **Session 10:** Text chapter rebuilt from pp. 129-138: font-role table (Lucida Grande 13/11/9, label 10, view 12, application 13), label rules, title/sentence capitalization tables, contractions, acronyms, developer-term translations, before/after examples, and a UI copy checklist. Text promoted to Source-verified.

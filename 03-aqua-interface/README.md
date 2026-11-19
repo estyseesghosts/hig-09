@@ -6,7 +6,7 @@ Concrete interaction, visual, and control-level guidance for Aqua-era UI.
 
 - [User Input](user-input.md) (p. 97) — Status: Summarized
 - [Drag and Drop](drag-and-drop.md) (p. 121) — Status: Source-verified
-- [Text](text.md) (p. 129) — Status: Summarized
+- [Text](text.md) (p. 129) - Status: Source-verified
 - [Icons](icons.md) (p. 139) — Status: Summarized
 - [Pointers](pointers.md) (p. 161) — Status: Source-verified
 - [Menus](menus.md) (p. 165) — Status: Source-verified
@@ -20,14 +20,12 @@ This is the primary section for implementation-facing notes: component behavior,
 
 ## Research status
 
-- **State:** Drag and Drop, Pointers, Menus, and Layout Guidelines are **Source-verified**. User Input, Text,
+- **State:** Drag and Drop, Pointers, Menus, Text, and Layout Guidelines are **Source-verified**. User Input,
   Icons, Windows, and Controls are **Summarized**.
 - **Not yet:** Close the gaps listed below before treating any part of this section as implementation-ready.
 
 ## Open items
 
-- [ ] Text: labels, capitalization, contractions, abbreviations, and developer terms (pp. 135-138) are still
-      outline-level.
 - [ ] Windows: Open, Choose, Print, and Page Setup dialogs, dialog focus/default/cancel rules, and sheet-vs-
       application-modal decisions still need source notes.
 - [ ] Controls: selection controls (pp. 280-310), indicators (pp. 310-321), text controls (pp. 321-328), view

@@ -58,7 +58,7 @@ therefore meant nothing. Do not reintroduce it.
 | Introduction | p. 19 | 1 | Source-verified | None |
 | I - Application Design Fundamentals | p. 23 | 4 | Source-verified | None |
 | II - The Macintosh Experience | p. 59 | 3 | Summarized | Installation is Mapped; environment/technology subsections are compressed |
-| III - The Aqua Interface | p. 95 | 9 | Summarized | Text, Windows, Controls, and User Input have outline-level subsections |
+| III - The Aqua Interface | p. 95 | 9 | Summarized | Windows, Controls, User Input, and Icons have outline-level subsections |
 | Reference | p. 367 | 4 | Summarized | Appendix A is Mapped; glossary/revision/index are selective by design |
 
 ## Chapter status
@@ -75,7 +75,7 @@ therefore meant nothing. Do not reintroduce it.
 | [Software Installation and Software Updates](02-macintosh-experience/software-installation-and-software-updates.md) | Mapped | Section-level outline only; needs pp. 85-92 expansion |
 | [User Input](03-aqua-interface/user-input.md) | Summarized | Keyboard, selection, and text-editing subsections are compressed into broad notes |
 | [Drag and Drop](03-aqua-interface/drag-and-drop.md) | Source-verified | Source coverage complete; needs acceptance tests and cross-links to pointers/user input |
-| [Text](03-aqua-interface/text.md) | Summarized | Labels, capitalization, contractions, abbreviations, and terminology (pp. 135-138) are outline-level |
+| [Text](03-aqua-interface/text.md) | Source-verified | None |
 | [Icons](03-aqua-interface/icons.md) | Summarized | Icon-creation and system-provided-image subsections are summarized |
 | [Pointers](03-aqua-interface/pointers.md) | Source-verified | None |
 | [Menus](03-aqua-interface/menus.md) | Source-verified | None |
