@@ -144,6 +144,8 @@ test checks. Unlinked entries are still at source-note level. Page numbers refer
       separators/group boxes, layout).
 - [x] Catalogue every retained screenshot, its subject, dimensions, version evidence (known/unknown), and
       missing states in `notes/image-inventory.md`.
+- [x] Map cross-cutting accessibility and keyboard obligations to testable IDs in
+      `notes/accessibility-checklist.md`; component specs cite the IDs instead of restating rules.
 - [ ] Close the capture-matrix gaps: inactive windows, focus rings, mixed/disabled control states, sheets,
       inspectors, open menus, and capacity/rating/relevance indicators.
 

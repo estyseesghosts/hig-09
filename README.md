@@ -109,5 +109,6 @@ therefore meant nothing. Do not reintroduce it.
 - [Image and figure inventory](notes/image-inventory.md)
 - [Source and provenance](00-source/README.md#copyright-and-redistribution)
 - [Scope and evidence labels](notes/scope-and-evidence.md)
+- [Accessibility and keyboard checklist](notes/accessibility-checklist.md)
 - [Chapter notes template](templates/chapter-notes.md)
 - [Research note template](templates/research-note.md)

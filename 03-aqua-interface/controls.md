@@ -8,7 +8,8 @@
 > `NSButton`/`NSTexturedRoundedBezelStyle`-style notes are historical AppKit implementation detail, not a
 > mandate for this recreation. Decisions for the recreation's own platform are isolated under
 > [Recreation-specific decisions](#recreation-specific-decisions--open-questions). See
-> [Scope and evidence labels](../notes/scope-and-evidence.md).
+> [Scope and evidence labels](../notes/scope-and-evidence.md). Accessibility obligations shared by every
+> control are in the [accessibility checklist](../notes/accessibility-checklist.md).
 
 ## Why this matters (retro recreation)
 

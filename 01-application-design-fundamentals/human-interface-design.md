@@ -92,14 +92,19 @@ to component behaviors the recreation will need to implement (menus, windows, co
   - p. 50 — Physical Disabilities: Sticky Keys, Mouse Keys, full keyboard access mode; don't override
     assistive-tech keyboard shortcuts.
 
+  Concrete, testable obligations for these paragraphs are in the
+  [accessibility and keyboard-navigation checklist](../notes/accessibility-checklist.md).
+
 - p. 51 — Extending the Interface: build on existing interface; don't assign new behaviors to existing
   objects; create new interface elements cautiously.
 
 ## Implementation implications
 
-- The recreation should implement: undo/redo, direct manipulation, consistent terminology/placement, menu
-  bar commands for feature availability, progress feedback, forgiving actions, standard controls per type.
-- Retain user window state; use standard Aqua control semantics.
+- **HISTORICAL (p. 49-51):** support undo/redo, direct manipulation, consistent terminology/placement, menu
+  bar commands for feature availability, progress feedback, forgiving actions, and standard control semantics.
+- **HISTORICAL (p. 49):** build accessibility in from the start; do not override OS accessibility features.
+- **RECREATION (PENDING):** which of these are in the recreated app's scope. Every claim above is 2009 advice
+  for Mac OS X apps; see [Scope and evidence](../notes/scope-and-evidence.md).
 
 ## Assets / examples to capture later
 
