@@ -4,7 +4,12 @@ Derived from HIG chapters reviewed so far (Parts I–III, Reference). Target: co
 should implement or emulate.
 
 **Spec status:** controls with a `controls.md` link have source-backed purpose, usage, metrics, states, and
-test checks. Unlinked entries are still at source-note level. Page numbers refer to the printed HIG pages.
+test checks. Components with a `specs/` link have a standalone, testable specification. Unlinked entries are
+still at source-note level. Page numbers refer to the printed HIG pages.
+
+- [Component specifications](../specs/README.md) — the seven-component vertical slice.
+- [Component traceability matrix](component-traceability.md) — chapter doc, figures/assets, evidence status,
+  and a regression-test anchor for every family.
 
 ## Window types
 
@@ -12,7 +17,9 @@ test checks. Unlinked entries are still at source-note level. Page numbers refer
 - [ ] Application windows
 - [ ] Panels (inspector, transparent, fonts/colors windows, About windows p. 227–235)
 - [ ] Dialogs / alerts (types p. 235; sheets p. 236; alerts p. 237; appearance/behavior p. 240; dismissing p. 241;
-      Apply button p. 242; expanded dialogs p. 242)
+      Apply button p. 242; expanded dialogs p. 242) — [sheet spec](../specs/sheet.md)
+- [ ] Source lists / sidebars (primary blue vs. window-local white pp. 208–212) —
+      [component spec](../specs/source-list.md)
 - [ ] Find windows (p. 243)
 - [ ] Preferences windows (p. 243; resize/minimize clarifications p. 243)
 
@@ -26,11 +33,13 @@ test checks. Unlinked entries are still at source-note level. Page numbers refer
       (Show/Hide Toolbar, Customize Toolbar); Help menu (p. 187); Window menu (Minimize, Zoom, Minimize All,
       Bring All to Front, Arrange in Front, open docs p. 186); Application-specific menus (between View and
       Window, p. 186); Menu Bar Extras (p. 188); contextual menus (p. 188); Dock menus (p. 190).
+- [ ] Menu items: naming, ellipsis, state symbols (checkmark/dash/bullet/diamond), toggles, grouping, submenus,
+      dynamic items (pp. 165–176) — [component spec](../specs/menu-item.md)
 
 ## Controls (window-body)
 
 - [ ] Push buttons (text-only; verb labels; default button behavior; spacing p. 265–269; source notes in
-      `controls.md`)
+      `controls.md`) — [spec](../specs/push-button.md)
 - [ ] Bevel buttons (image + text or menu; toolbar/bottom-bar use p. 277)
 - [ ] Icon buttons (toolbar; hit target 10px margin, icon 24–32px; labels p. 269)
 - [ ] Round buttons (Help button, etc. p. 276–279)
@@ -63,7 +72,7 @@ test checks. Unlinked entries are still at source-note level. Page numbers refer
 - [ ] Radio buttons (p. 280–283) —
       [spec](../03-aqua-interface/controls.md#radio-buttons-pp-280-283), p. 280–283
 - [ ] Checkboxes (p. 283–286) —
-      [spec](../03-aqua-interface/controls.md#checkboxes-pp-283-286), p. 283–286
+      [spec](../03-aqua-interface/controls.md#checkboxes-pp-283-286), [component spec](../specs/checkbox.md), p. 283–286
 - [ ] Placards (p. 310) —
       [spec](../03-aqua-interface/controls.md#placards-p-310), p. 310
 
@@ -83,7 +92,8 @@ test checks. Unlinked entries are still at source-note level. Page numbers refer
 - [ ] Static text fields (p. 321) —
       [spec](../03-aqua-interface/controls.md#static-text-fields-pp-321-322), p. 321–322
 - [ ] Text input fields (p. 322–325) —
-      [spec](../03-aqua-interface/controls.md#text-input-fields-pp-322-325), p. 322–325
+      [spec](../03-aqua-interface/controls.md#text-input-fields-pp-322-325),
+      [component spec](../specs/text-input-field.md), p. 322–325
 - [ ] Token fields (p. 325–326) —
       [spec](../03-aqua-interface/controls.md#token-fields-pp-325-326), p. 325–326
 - [ ] Search fields (p. 326–329) —
@@ -125,7 +135,8 @@ test checks. Unlinked entries are still at source-note level. Page numbers refer
 
 ## Window-frame controls
 
-- [ ] Toolbar controls: rectangular-style, capsule-style, legacy (p. 255–265)
+- [ ] Toolbar controls: rectangular-style, capsule-style, legacy (p. 255–265) —
+      [component spec](../specs/toolbar-item.md)
 - [ ] Bottom bar controls (p. 212, 257, 365)
 
 ## Dialogs / sheets

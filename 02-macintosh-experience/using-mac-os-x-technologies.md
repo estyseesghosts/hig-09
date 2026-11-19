@@ -218,7 +218,8 @@ interface to reproduce, or is it a host capability that can be replaced wholesal
 - [ ] Dashboard widget front/back, including Info and Done controls (pp. 72-74; Figure 6-4).
 - [ ] Spotlight results window and contextual-menu search (Figures 6-9 to 6-11).
 - [ ] A help tag in place, and a Help button with its anchor target (Figures 6-12, p. 81).
-- [ ] Standard Print dialog and its panes (p. 76; Figure 6-8; see [Windows](windows.md#print-dialogs)).
+- [ ] Standard Print dialog and its panes (p. 76; Figure 6-8; see
+      [Windows](../03-aqua-interface/windows.md#print-dialog-pp-253-254)).
 - [ ] Retained utility captures are catalogued in the [image inventory](../notes/image-inventory.md):
       Activity Monitor, AppleScript Editor, Automator, Console, Disk Utility, Network Utility, System
       Profiler, Help Viewer, and the 10.6.8 desktop.

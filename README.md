@@ -26,7 +26,8 @@ See [`00-source/README.md`](00-source/README.md) for source details and lookup w
 - [`02-macintosh-experience/`](02-macintosh-experience/README.md) — Part II (p. 59)
 - [`03-aqua-interface/`](03-aqua-interface/README.md) — Part III (p. 95)
 - [`04-reference/`](04-reference/README.md) — appendices/reference material
-- [`templates/`](templates/) — reusable note templates
+- [`templates/`](templates/) — reusable note and component-spec templates
+- [`specs/`](specs/README.md) — testable component specifications (7-component vertical slice)
 - [`notes/`](notes/) — cross-cutting notes, research backlog, and retro recreation component inventory
 
 ## Research status definitions
@@ -110,5 +111,7 @@ therefore meant nothing. Do not reintroduce it.
 - [Source and provenance](00-source/README.md#copyright-and-redistribution)
 - [Scope and evidence labels](notes/scope-and-evidence.md)
 - [Accessibility and keyboard checklist](notes/accessibility-checklist.md)
+- [Component specifications](specs/README.md)
+- [Component traceability matrix](notes/component-traceability.md)
 - [Chapter notes template](templates/chapter-notes.md)
 - [Research note template](templates/research-note.md)

@@ -48,7 +48,7 @@ behavior, and contextual/Dock menus — highly fidelity-relevant.
   actions (verbs, base form) or attributes (adjectives, "Change the selected object to…"); unavailable items
   dimmed; title-style capitalization; avoid articles.
 - p. 167 (menu item naming): commands that require additional information before execution follow the shared
-  ellipsis rules in [Text](text.md#using-the-ellipsis-character) (pp. 131-132). Use a single Unicode ellipsis
+  ellipsis rules in [Text](text.md#using-the-ellipsis-character-pp-131-132) (pp. 131-132). Use a single Unicode ellipsis
   character (`…`, Option-semicolon), not three periods. An ellipsis is not used merely because another window
   may appear; see Text for positive/negative rules and examples (e.g. Open…, Save As…, Print…, Preferences…
   vs. New, Save, Copy, Get Info, Close, Quit). (pp. 131-132, 167)
@@ -77,7 +77,7 @@ behavior, and contextual/Dock menus — highly fidelity-relevant.
   Preferences and Services (no Help item — that's in Help menu).
 - p. 179-180 - File menu: New, Open, Open Recent, Close, Close File, Save, Save As…, Export As…, Save All,
   Revert to Saved, Print…, Page Setup… (commands that require specific input or always open a separate window
-  in this context use an ellipsis; see [Text](text.md#using-the-ellipsis-character) for the 2009 HIG rules,
+  in this context use an ellipsis; see [Text](text.md#using-the-ellipsis-character-pp-131-132) for the 2009 HIG rules,
   pp. 131-132). Open Recent submenu most-recent-first, display names not paths; Close Option = Close All
   (Cmd-Option-W).
   - **Save / Save As… / Export As… document-state rules (pp. 179-180):**
@@ -100,7 +100,7 @@ behavior, and contextual/Dock menus — highly fidelity-relevant.
   - Save All: saves changes to all open documents. Revert to Saved discards changes since last save/open and
     must warn with an alert about potential data loss. Print… (Cmd-P) and Page Setup… (Cmd-Shift-P) follow
     standard File-menu behavior. (pp. 180-181)
-  - See [Windows](windows.md#dialogs-for-saving-closing-and-quitting) for save/close/quit dialog and alert
+  - See [Windows](windows.md#dialogs-for-saving-closing-and-quitting-pp-246-251) for save/close/quit dialog and alert
     behavior (pp. 246-251).
 
 - p. 181 — Edit menu: Undo, Redo, Cut, Copy, Paste, Paste and Match Style, Delete, Select All, Find,

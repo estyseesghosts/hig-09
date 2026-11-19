@@ -118,7 +118,7 @@ pixel-faithful recreation.
   avoid associating a menu with a push button (use bevel button). Always text-only (no image; use bevel button).
   Label = verb/verb phrase ("Save", "Close", "Print", "Delete", "Change Password"); specific when acting on a
   single setting ("Choose Picture…" not "Choose…"); no "now" needed. Apply the shared ellipsis rules in
-  [Text](text.md#using-the-ellipsis-character) (pp. 131-132): use an ellipsis when the action requires
+  [Text](text.md#using-the-ellipsis-character-pp-131-132) (pp. 131-132): use an ellipsis when the action requires
   specific additional input/choices or opens a separate window or dialog in which the user performs that
   input (for example **Print…**, **Save As…**, **Choose Picture…**; opening another app’s preferences to
   complete a task is a separate user task). Do **not** add an ellipsis merely because another window may
