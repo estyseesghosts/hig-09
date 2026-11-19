@@ -75,7 +75,7 @@ therefore meant nothing. Do not reintroduce it.
 | [Human Interface Design](01-application-design-fundamentals/human-interface-design.md) | Source-verified | None |
 | [Prioritizing Design Decisions](01-application-design-fundamentals/prioritizing-design-decisions.md) | Source-verified | None |
 | [The Mac OS X Environment](02-macintosh-experience/the-mac-os-x-environment.md) | Summarized | Dock, Finder, multiple-user, and thread subsections are compressed |
-| [Using Mac OS X Technologies](02-macintosh-experience/using-mac-os-x-technologies.md) | Summarized | Many technology subsections are one-line summaries; Help pp. 81-84 is a cross-cutting task |
+| [Using Mac OS X Technologies](02-macintosh-experience/using-mac-os-x-technologies.md) | Source-verified | None; implementation choices isolated from 2009 AppKit advice |
 | [Software Installation and Software Updates](02-macintosh-experience/software-installation-and-software-updates.md) | Source-verified | None |
 | [User Input](03-aqua-interface/user-input.md) | Summarized | Keyboard, selection, and text-editing subsections are compressed into broad notes |
 | [Drag and Drop](03-aqua-interface/drag-and-drop.md) | Source-verified | None |
@@ -96,6 +96,10 @@ therefore meant nothing. Do not reintroduce it.
 - Keep notes tied to **page numbers / section titles** from the PDF.
 - Prefer concise summaries, quoted terms only when necessary, and explicit page references.
 - Separate **source observations** from **interpretation / implementation ideas**.
+- Separate the four evidence labels — *what the 2009 source says*, *observed 10.6 behavior*, *interpretation*,
+  and *recreation decision / open question*. "Use the system-provided control" is historical advice for Mac OS X
+  apps, not a mandate for a cross-platform recreation. See
+  [Scope and evidence labels](notes/scope-and-evidence.md).
 - Use `notes/research-backlog.md` to track targeted extraction tasks instead of reading the full PDF linearly.
 
 ## Quick links
@@ -104,5 +108,6 @@ therefore meant nothing. Do not reintroduce it.
 - [Component inventory](notes/component-inventory.md)
 - [Image and figure inventory](notes/image-inventory.md)
 - [Source and provenance](00-source/README.md#copyright-and-redistribution)
+- [Scope and evidence labels](notes/scope-and-evidence.md)
 - [Chapter notes template](templates/chapter-notes.md)
 - [Research note template](templates/research-note.md)

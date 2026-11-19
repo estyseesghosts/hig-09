@@ -4,6 +4,12 @@
 - **PDF start page:** 255
 - **Status:** Source-verified
 
+> **Scope:** the requirements below describe what the 2009 HIG asked of applications **targeting Mac OS X**.
+> `NSButton`/`NSTexturedRoundedBezelStyle`-style notes are historical AppKit implementation detail, not a
+> mandate for this recreation. Decisions for the recreation's own platform are isolated under
+> [Recreation-specific decisions](#recreation-specific-decisions--open-questions). See
+> [Scope and evidence labels](../notes/scope-and-evidence.md).
+
 ## Why this matters (retro recreation)
 
 The Controls chapter is the implementation-heavy core of the recreation: button styles, selection controls,
@@ -68,6 +74,8 @@ pixel-faithful recreation.
   controls include push buttons, scroll bars, radio buttons, checkboxes, sliders, and pop-up menus. Use the
   standard, system-provided controls — they auto-update with OS refreshes and familiar use means predictable
   operation. Use only standard control sizes (regular, small, mini); most apps look best with regular.
+  **Scope:** this is advice to applications shipping on Mac OS X (where the controls are AppKit's); it is not
+  a cross-platform mandate. See [Scope and evidence](../notes/scope-and-evidence.md).
   - Avoid vertically resizing controls (problematic in Mac OS X v10.5+).
   - Note: when a control's dimension (typically height) is fixed, the measurement is for window layout, not
     for creating the control.
@@ -195,7 +203,7 @@ Security preferences uses them to choose which connections pass through the fire
 radio-group behavior: Tab reaches the group, arrow keys move the selection within it, and the selected button
 is the group's value. Do not make a radio button perform an immediate command.
 
-**Implementation.** `NSButton` with type `NSRadioButton`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSButton` with type `NSRadioButton`.
 
 **Test checks.** Exactly one button is selected after any interaction; clicking the selected button does not
 deselect it; a group of six or more is a design-review failure unless a documented exception exists.
@@ -235,7 +243,7 @@ is independent unless the dependency is clearly shown by indentation.
 **States.** Off (unchecked), on (checked), mixed (dash), enabled, disabled. The mixed state is for a selection
 that spans multiple objects with differing values, not for "unknown."
 
-**Implementation.** `NSButton` with type `NSSwitchButton`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSButton` with type `NSSwitchButton`.
 
 **Test checks.** Clicking the label toggles the checkbox; mixed state appears only for a multi-object selection;
 dependent controls enable/disable immediately when the controller changes.
@@ -273,7 +281,7 @@ buttons or checkboxes. Like a push button, clicking a segment initiates an immed
 rendering. The HIG does not define hover/pressed artwork here; use the system control. The action occurs on
 click, not on a delayed commit.
 
-**Implementation.** `NSSegmentedControl`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSSegmentedControl`.
 
 **Test checks.** No mixed icon/text segments; equal widths; view-switcher segments do not claim tab-view
 attachment; add/remove is not implemented with a `+`/`-` segmented control in the window body.
@@ -287,7 +295,7 @@ always show the same image.
 **Usage.** This is the one selection control that may also be used in a window-frame area. For the button
 appearance and hit targets, see "Icon Buttons" (pp. 269-271) and "Bevel Buttons" (pp. 277-279).
 
-**Implementation.** Drag an `NSPopUpButton` into the window; set its type to Pull Down. For a rounded or square
+**Implementation (Mac OS X 10.6 AppKit; historical).** Drag an `NSPopUpButton` into the window; set its type to Pull Down. For a rounded or square
 bevel button, choose the corresponding style; for an icon button, deselect Bordered. Resize as needed.
 
 **Test checks.** The arrow is a single downward arrow; the image is either the current selection or a fixed menu
@@ -327,7 +335,7 @@ control displays the current value.
 - Intro label: emphasized system/small/mini font; **8 / 6 / 5 px** between the colon and the control.
 - Vertical stack spacing: at least **10 / 8 / 6 px** (Figure 15-32).
 
-**Implementation.** `NSPopUpButton`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSPopUpButton`.
 
 **Test checks.** 12-item limit; no submenus; no verbs in a pop-up (commands belong in a pull-down); checking the
 current value; pointer-outside cancellation leaves the old value.
@@ -353,7 +361,7 @@ contextual menu. It provides a visible shortcut to a handful of useful commands 
 control. Spacing follows the host control: rectangular-style toolbar control in a toolbar, gradient button below
 a source list/list view.
 
-**Implementation.** Toolbar: rectangular-style toolbar control with `NSActionTemplate`. Bottom of a source
+**Implementation (Mac OS X 10.6 AppKit; historical).** Toolbar: rectangular-style toolbar control with `NSActionTemplate`. Bottom of a source
 list/list: gradient button.
 
 **Test checks.** The Action icon is the system image; no keyboard shortcuts appear in the menu; every item is
@@ -385,7 +393,7 @@ allows only one selection.
 - Intro-label gap: **8 / 6 / 5 px**.
 - Vertical stack spacing: at least **12 / 10 / 8 px**.
 
-**Implementation.** `NSComboBox`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSComboBox`.
 
 **Test checks.** Typed custom value is accepted but not persisted into the list; matching prefix highlights the
 item; keyboard accept works; clicking outside closes without changing the value.
@@ -408,7 +416,7 @@ selected folder. If the path is too long, the folder names between the first and
 **Usage.** Use when the location matters but a raw path would be too technical. Do not use a path control as a
 substitute for a simple label when only a name is needed.
 
-**Implementation.** `NSPathControl`; style is set in the Attributes pane.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSPathControl`; style is set in the Attributes pane.
 
 **Test checks.** Long paths hide middle components, not the endpoints; pop-up Choose opens the Open dialog at
 the selected folder.
@@ -439,7 +447,7 @@ the documented drag types and shows the image; a clearable well supports Cut/Cop
   calendar, clock, or both. Change month with the left/right arrows, select a day by clicking its date, and set
   time by dragging the clock hands.
 
-**Implementation.** `NSDatePicker`; switch textual/graphical in the Attributes pane.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSDatePicker`; switch textual/graphical in the Attributes pane.
 
 **Test checks.** Textual fields accept typing and stepper changes; graphical calendar cannot select an invalid
 date; date and time remain consistent when either subcontrol changes.
@@ -462,7 +470,7 @@ commands that affect the containing window's contents (for example, the Colors w
 
 **Specifications.** Same as pop-up menus (pp. 291-292).
 
-**Implementation.** `NSPopUpButton` with type Pull Down.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSPopUpButton` with type Pull Down.
 
 **Test checks.** Closed title never changes with the selected command; active commands show checkmarks; the
 menu is not used for ordinary window commands.
@@ -494,7 +502,7 @@ menu is not used for ordinary window commands.
 - Range-label font: label font for regular/small; **9-point label font** for mini.
 - Stacked linear slider spacing: at least **12 / 10 / 8 px**.
 
-**Implementation.** `NSSlider`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSSlider`.
 
 **Test checks.** Live update while dragging; tick labels match the actual scale; round thumb has no ticks; value
 is clamped at both ends; circular slider wraps through the start/end point as specified.
@@ -507,7 +515,7 @@ shows the current value. The field may or may not be editable.
 **Specifications.** Regular, small, mini; fixed dimensions per size. Gap between stepper and its text field:
 **2 / 2 / 1 px** (Figure 15-53).
 
-**Implementation.** `NSStepper`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSStepper`.
 
 **Test checks.** One click changes the value by one step; press-and-hold repeats at the system rate; the paired
 field updates immediately and respects the same minimum/maximum.
@@ -649,7 +657,7 @@ messages, serial numbers, IP addresses, and similar values.
 
 **Specifications.** System font, small system font, or mini system font depending on the layout (Figure 15-69).
 
-**Implementation.** `NSTextField`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSTextField`.
 
 **Test checks.** Non-editable; selectable only where copying is useful; dimmed state is legible and distinct.
 
@@ -680,7 +688,7 @@ supports keyboard focus, and supports password entry.
 - Focus/insertion/selection appearances are shown in Figure 15-71; selection behavior follows "Selections in
   Text" (p. 115).
 
-**Implementation.** `NSTextField`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSTextField`.
 
 **Test checks.** Edit check fires on blur, Return, Enter, and Tab; password entry masks characters; disabled
 field cannot receive focus; all same-row fields share a width.
@@ -700,7 +708,7 @@ field cannot receive focus; all same-row fields share a width.
 **Specifications.** Fits inside the standard text input field sizes. Heights: **16 / 14 / 11 px**
 (regular/small/mini); length follows the token.
 
-**Implementation.** `NSTokenField`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSTokenField`.
 
 **Test checks.** Comma/Return/Enter all commit a token; completion delay is configurable; token drag carries
 the represented object; token menu appears only when implemented; backspace edits the token as specified.
@@ -727,7 +735,7 @@ the represented object; token menu appears only when implemented; backspace edit
 
 **Specifications.** Regular and small; heights **22 / 19 px**; length developer-controlled (Figure 15-75).
 
-**Implementation.** `NSSearchField`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSSearchField`.
 
 **Test checks.** Command-Option-F focuses the field; typing or Return starts search per the chosen mode; stop
 icon cancels; no recent-search history is exposed; toolbar customization shows "Search".
@@ -757,7 +765,7 @@ icon cancels; no recent-search history is exposed; toolbar customization shows "
 **Specifications.** Developer-controlled size. Show full lines of text (do not clip horizontally); the scrolling
 increment is one list element.
 
-**Implementation.** Start with `NSTableView`; size it so only the vertical scroller shows; set one column and
+**Implementation (Mac OS X 10.6 AppKit; historical).** Start with `NSTableView`; size it so only the vertical scroller shows; set one column and
 deselect Headers.
 
 **Test checks.** Shift/Cmd selection semantics; type-ahead; middle ellipsis; one-element scroll increment; no
@@ -796,7 +804,7 @@ data. They are for the window body only. (p. 329)
 
 **Specifications.** One size: **13×13 px** (Figure 15-77).
 
-**Implementation.** `NSButton` with bezel style `NSDisclosureBezelStyle`, button type
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSButton` with bezel style `NSDisclosureBezelStyle`, button type
 `NSPushOnPushOffButton`.
 
 **Test checks.** Default closed; label toggles with state; disclosure does not act as a selection control.
@@ -816,7 +824,7 @@ detail or hierarchical lists, use a disclosure triangle.
 **Specifications.** Align the button with the pop-up or other list-based control it affects, and place it close
 enough to make the relationship clear.
 
-**Implementation.** `NSButton` with bezel style `NSRoundedDisclosureBezelStyle`, button type
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSButton` with bezel style `NSRoundedDisclosureBezelStyle`, button type
 `NSPushOnPushOffButton`.
 
 **Test checks.** Closed points down; open points up; expansion preserves the nearby control's alignment; no
@@ -842,7 +850,7 @@ their headings and order.
 - Selection follows standard list behavior: click, Shift-click for a range, Command-click for a discontinuous
   selection, arrow-key navigation, and type-ahead.
 
-**Implementation.** `NSTableView`; use `NSOutlineView` in column format for disclosure triangles.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSTableView`; use `NSOutlineView` in column format for disclosure triangles.
 
 **Test checks.** One active sort column; clicking it reverses direction; hierarchy appears in only one column;
 headers are short noun phrases.
@@ -869,7 +877,7 @@ selection may show details in the rightmost column.
   window title.
 - Icons are usually integral to the items.
 
-**Implementation.** `NSBrowser`, or `NSOutlineView` in column format.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSBrowser`, or `NSOutlineView` in column format.
 
 **Test checks.** Root in the leftmost column; each column contains only the previous selection's descendants;
 no column headings; triangle is an indicator, not a disclosure control; horizontal and per-pair vertical
@@ -898,7 +906,7 @@ five subviews has four splitters.
 horizontal subviews; one window may contain multiple split views with different orientations (Automator,
 Figure 15-83).
 
-**Implementation.** `NSSplitView`; choose Thick/Thin divider in Interface Builder.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSSplitView`; choose Thick/Thin divider in Interface Builder.
 
 **Test checks.** Pointer changes across the entire hot zone; thick splitter remains after collapsing; zero-width
 splitter has min/max or a restore button; no mixed orientation in one split view.
@@ -937,7 +945,7 @@ clicking a tab shows its attached pane.
 - Extended style: keep at least **20 px** between the pane content and the tab-view edges.
 - Pop-up menu used instead of tabs: center it along the top of the group box (Figure 15-87).
 
-**Implementation.** `NSTabView`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSTabView`.
 
 **Test checks.** 2-6 tabs; single row; selected tab matches visible pane; pane controls do not affect other
 panes; inset/extended margins match the chosen style.
@@ -979,7 +987,7 @@ categories or subgroups.
 - Both ends equally distant from the window edges.
 - Multiple separators with the same orientation must be the same length.
 
-**Implementation.** `NSBox`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSBox`.
 
 **Test checks.** Separator does not span the full window; labels sit on the line's base; spacing and length are
 consistent across same-orientation separators.
@@ -1006,25 +1014,58 @@ pronounced differentiation of content.
 - Leave at least **20 px** from the group-box edge to the window edge.
 - If nesting is unavoidable, see "A Changeable Pane Dialog" (p. 350) for spacing guidance.
 
-**Implementation.** `NSBox`.
+**Implementation (Mac OS X 10.6 AppKit; historical).** `NSBox`.
 
 **Test checks.** No nested group boxes unless documented; checkbox title enables/disables the entire contents;
 title uses sentence-style capitalization; 20 px window margin.
 
 ## Implementation implications
 
-- Retro recreation should use system-provided controls where the recreation runs on a Mac-like platform; avoid
-  custom control implementations except where the target era/platform lacks them.
-- Control inventory for the recreation: push buttons, icon buttons, bevel buttons, gradient buttons, toggle/
-  segmented toolbar controls, scope buttons, pop-up menus, combo boxes, path controls, color wells, image wells,
-  date pickers, sliders, steppers, disclosure triangles/buttons, list views, column views, split views, tab
-  views, separators, group boxes, progress/level/rating/relevance indicators, static/text/token/search/scrolling
-  lists.
-- Spacing/fidelity specs to carry into implementation: push button spacing 12/10/8 px (regular/small/mini);
-  slider control spacing 12/10/8; stepper-to-text-field 2/2/1 px; group box ≥20 px from window edge; separator ≥10 px
-  from controls; tab label margins (12 px each side regular, system font).
-- Behavior: indeterminate process → dim + feedback; opposing functions → separate buttons; immediate action
-  semantics (Return activates default); destructive action spacing from safe actions.
+### What the 2009 source says (requirements for Mac OS X apps)
+
+- Use system-provided controls rather than custom ones; their behavior and accessibility come for free and
+  track OS updates (p. 255).
+- Sizes are regular/small/mini only; most windows should use regular. Do not vertically resize controls
+  (pp. 255, 265).
+- Controls in this chapter belong in the window body; only icon buttons, action menus, and search fields are
+  also allowed in window-frame areas (p. 265).
+- An indeterminate action dims its button and shows progress feedback; opposing actions use two buttons rather
+  than one dual-purpose button (p. 265).
+- Return/Enter activates the default button; pressing a nondefault button gives it color and removes the
+  default's color (p. 268).
+
+### Historical Mac OS X 10.6 implementation detail (not a recreation requirement)
+
+- AppKit classes named in each component section (`NSButton`, `NSSegmentedControl`, `NSTextField`,
+  `NSTableView`, …) and Interface Builder instructions describe how Apple expected these controls to be built in
+  2009. They explain the source's vocabulary; they do not bind a non-AppKit recreation.
+- `NSTexturedRoundedBezelStyle`, `NSMomentaryPushInButton`, `NSActionTemplate`, and similar names are recorded
+  only so the 2009 look can be identified.
+
+### Interpretation
+
+- The durable design rules are the *behavioral* ones: fixed-height sizes, no vertical stretching, immediate
+  action vs. state, default-button semantics, and consistent spacing. Those can be implemented in any toolkit.
+- The *visual* rules (bezel rendering, focus glow) are observable 10.6 appearance, not statements about
+  geometry; where the HIG gives no number, the value must be measured from a capture rather than invented.
+
+### Recreation-specific decisions / open questions
+
+- **PENDING — control strategy:** native-host widgets vs. custom-drawn Aqua controls. The HIG's
+  "use system-provided controls" advice assumes Mac OS X; the recreation's target platform is not yet fixed.
+  Blocked by: target-platform decision. See [scope note](../notes/scope-and-evidence.md#how-to-treat-use-the-system-provided-control).
+- **PENDING — fidelity target:** pixel-faithful 10.6 rendering, interaction-faithful (behavior/metrics), or
+  terminology-only. Affects every control spec.
+- **DECIDED — carry the measurements:** spacing/fidelity specs listed below are recorded as source-derived
+  numbers regardless of strategy, because they are the measurable part of the guidance.
+- **PENDING — control inventory:** which of these families the recreated app actually uses. See
+  [component inventory](../notes/component-inventory.md).
+
+### Measurements to carry into any implementation
+
+- Push button spacing 12/10/8 px (regular/small/mini); slider spacing 12/10/8; stepper-to-text-field 2/2/1 px;
+  group box ≥20 px from the window edge; separator ≥10 px from controls; tab label margins 12 px per side
+  (regular, system font) (pp. 269, 305-310, 344-345, 338-341).
 
 ## Assets / examples to capture later
 
@@ -1039,7 +1080,10 @@ title uses sentence-style capitalization; 20 px window margin.
 
 ## Open questions / follow-up extraction
 
-- [ ] Which control families does the app being recreated actually use? (Cross-reference with feature list.)
-- [ ] Should the recreation implement custom controls at all, or only system-provided ones?
+- [ ] Which control families does the app being recreated actually use? See the pending control-inventory
+      decision above and [component inventory](../notes/component-inventory.md).
+- [ ] Native-host vs. custom-drawn control strategy (see recreation decisions above).
 - [ ] Which window-frame controls (toolbar, bottom bar) does the recreation need in addition to the window-body
       controls documented here? See "Window-Frame Controls" (pp. 255-264) for the source specs.
+- [ ] Hover/pressed artwork is not specified in the HIG for most window-body controls; measure from 10.6
+      captures before implementing those states.
