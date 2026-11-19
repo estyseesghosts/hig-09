@@ -8,6 +8,10 @@ Use this file to queue focused extraction tasks so we can learn from the PDF inc
 - [x] Build a component/pattern inventory target list (menus, windows, controls, dialogs, layout, text, icons, pointers)
 - [x] Identify sections likely to contain measurements/specs vs. conceptual guidance
 
+## Retro recreation component inventory
+
+- [x] Drafted initial component/pattern inventory in `../notes/component-inventory.md` from reviewed chapters.
+
 ## Targeted extraction queue
 
 <!-- Add items like:
@@ -36,3 +40,4 @@ Use this file to queue focused extraction tasks so we can learn from the PDF inc
 - **Session 4:** Part III chapters filled (User Input through Layout Guidelines).
 - **Session 5:** Controls chapter filled (window-frame, buttons, indicators, text/view/grouping controls).
 - **Session 6:** Reference chapters filled (Appendix A, Glossary, Revision History, Index notes).
+- **Session 7:** Introduction notes added (p. 19-22); component inventory drafted; part/status mapping updated.
