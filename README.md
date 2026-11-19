@@ -2,8 +2,6 @@
 
 Private research wiki for a retro recreation project based on **Apple Human Interface Guidelines (2009)**.
 
-This repository is intentionally a **scaffold/framework only** at this stage: it organizes the source material and provides a place for future notes, extracts, and design research. No serious research pass has been completed yet.
-
 ## Source
 
 - PDF: `Apple-OSXHIGuidelines-2009.pdf`
@@ -31,10 +29,19 @@ See [`00-source/README.md`](00-source/README.md) for source details and lookup w
 
 - [x] Repository identified as research/wiki workspace
 - [x] Initial scaffold created
-- [ ] Source skim / section mapping
-- [ ] Chapter-by-chapter research notes
-- [ ] Retro recreation takeaways / component inventory
+- [x] Source skim / section mapping (TOC read via pdf_get_toc)
+- [x] Chapter-by-chapter research notes (Parts I–III + Reference completed)
+- [ ] Retro recreation takeaways / component inventory (in progress — see part READMEs)
 - [ ] Open questions and follow-up extraction tasks
+
+## Part status
+
+| Part | Range | Chapters | Status |
+| --- | --- | --- | --- |
+| I — Application Design Fundamentals | p. 23 | 4 | Reviewed |
+| II — The Macintosh Experience | p. 59 | 3 | Reviewed |
+| III — The Aqua Interface | p. 95 | 9 | Reviewed (see open items) |
+| Reference | p. 367 | 4 | Reviewed |
 
 ## Conventions (suggested)
 
