@@ -3,6 +3,9 @@
 Derived from HIG chapters reviewed so far (Parts I–III, Reference). Target: components the retro recreation
 should implement or emulate.
 
+**Spec status:** controls with a `controls.md` link have source-backed purpose, usage, metrics, states, and
+test checks. Unlinked entries are still at source-note level. Page numbers refer to the printed HIG pages.
+
 ## Window types
 
 - [ ] Document windows (naming: untitled, untitled 2; untitled naming p. 217, 247; save/close/quit dialogs p. 246–251)
@@ -26,52 +29,89 @@ should implement or emulate.
 
 ## Controls (window-body)
 
-- [ ] Push buttons (text-only; verb labels; default button behavior; spacing p. 265–269)
+- [ ] Push buttons (text-only; verb labels; default button behavior; spacing p. 265–269; source notes in
+      `controls.md`)
 - [ ] Bevel buttons (image + text or menu; toolbar/bottom-bar use p. 277)
 - [ ] Icon buttons (toolbar; hit target 10px margin, icon 24–32px; labels p. 269)
 - [ ] Round buttons (Help button, etc. p. 276–279)
 - [ ] Gradient buttons (source-list-related actions p. 273–276)
-- [ ] Segmented controls (toggle-like behavior; iCal bottom bar p. 286)
+- [ ] Segmented controls (toggle-like behavior; iCal bottom bar p. 286) —
+      [spec](../03-aqua-interface/controls.md#segmented-controls-pp-286-288), p. 286–288
+- [ ] Icon/bevel button with pop-up menu —
+      [spec](../03-aqua-interface/controls.md#icon-buttons-and-bevel-buttons-with-pop-up-menus-p-288), p. 288
 - [ ] Scope buttons (recessed + round rectangle for scope bars p. 271–273)
-- [ ] Sliders (linear/circular; tick marks; specs p. 305–309)
-- [ ] Stepper controls (p. 309–310)
-- [ ] Pop-up menus (p. 289–293)
-- [ ] Combo boxes (p. 295)
-- [ ] Action menus (p. 293)
-- [ ] Command pop-down menus (p. 303–305)
-- [ ] Date pickers (p. 301–303)
-- [ ] Path controls (p. 298)
-- [ ] Color wells (p. 300)
-- [ ] Image wells (p. 300)
-- [ ] Checkboxes / radio buttons (p. 280–283)
-- [ ] Placards (p. 310)
+- [ ] Sliders (linear/circular; tick marks; specs p. 305–309) —
+      [spec](../03-aqua-interface/controls.md#sliders-pp-305-309), p. 305–309
+- [ ] Stepper controls (p. 309–310) —
+      [spec](../03-aqua-interface/controls.md#stepper-controls-pp-309-310), p. 309–310
+- [ ] Pop-up menus (p. 289–293) —
+      [spec](../03-aqua-interface/controls.md#pop-up-menus-pp-289-293), p. 289–293
+- [ ] Combo boxes (p. 295) —
+      [spec](../03-aqua-interface/controls.md#combo-boxes-pp-295-298), p. 295–298
+- [ ] Action menus (p. 293) —
+      [spec](../03-aqua-interface/controls.md#action-menus-pp-293-295), p. 293–295
+- [ ] Command pop-down menus (p. 303–305) —
+      [spec](../03-aqua-interface/controls.md#command-pop-down-menus-pp-303-305), p. 303–305
+- [ ] Date pickers (p. 301–303) —
+      [spec](../03-aqua-interface/controls.md#date-pickers-pp-301-303), p. 301–303
+- [ ] Path controls (p. 298) —
+      [spec](../03-aqua-interface/controls.md#path-controls-pp-298-300), p. 298–300
+- [ ] Color wells (p. 300) —
+      [spec](../03-aqua-interface/controls.md#color-wells-and-image-wells-pp-300-301), p. 300–301
+- [ ] Image wells (p. 300) —
+      [spec](../03-aqua-interface/controls.md#color-wells-and-image-wells-pp-300-301), p. 300–301
+- [ ] Radio buttons (p. 280–283) —
+      [spec](../03-aqua-interface/controls.md#radio-buttons-pp-280-283), p. 280–283
+- [ ] Checkboxes (p. 283–286) —
+      [spec](../03-aqua-interface/controls.md#checkboxes-pp-283-286), p. 283–286
+- [ ] Placards (p. 310) —
+      [spec](../03-aqua-interface/controls.md#placards-p-310), p. 310
 
 ## Indicators / feedback
 
-- [ ] Progress indicators: determinate, indeterminate, asynchronous (p. 311–315)
-- [ ] Level indicators: capacity (continuous/discrete), rating, relevance (p. 316–320)
-- [ ] Rating indicators (p. 319)
+- [ ] Progress indicators: determinate, indeterminate, asynchronous —
+      [spec](../03-aqua-interface/controls.md#progress-indicators-pp-311-316), p. 311–316
+- [ ] Capacity indicators: continuous and discrete —
+      [spec](../03-aqua-interface/controls.md#level-indicators-pp-316-321), p. 316–321
+- [ ] Rating indicators —
+      [spec](../03-aqua-interface/controls.md#level-indicators-pp-316-321), p. 319
+- [ ] Relevance indicators —
+      [spec](../03-aqua-interface/controls.md#level-indicators-pp-316-321), p. 320
 
 ## Text / input
 
-- [ ] Static text fields (p. 321)
-- [ ] Text input fields (p. 322–325)
-- [ ] Token fields (p. 325–326)
-- [ ] Search fields (p. 326–329)
-- [ ] Scrolling lists (p. 328–329)
+- [ ] Static text fields (p. 321) —
+      [spec](../03-aqua-interface/controls.md#static-text-fields-pp-321-322), p. 321–322
+- [ ] Text input fields (p. 322–325) —
+      [spec](../03-aqua-interface/controls.md#text-input-fields-pp-322-325), p. 322–325
+- [ ] Token fields (p. 325–326) —
+      [spec](../03-aqua-interface/controls.md#token-fields-pp-325-326), p. 325–326
+- [ ] Search fields (p. 326–329) —
+      [spec](../03-aqua-interface/controls.md#search-fields-pp-326-328), p. 326–328
+- [ ] Scrolling lists (p. 328–329) —
+      [spec](../03-aqua-interface/controls.md#scrolling-lists-pp-328-329), p. 328–329
 
 ## View controls
 
-- [ ] Disclosure triangles / disclosure buttons (p. 329–332)
-- [ ] List views (p. 333–334)
-- [ ] Column views (p. 334–336)
-- [ ] Split views (p. 336–338)
-- [ ] Tab views (p. 338–341)
+- [ ] Disclosure triangles (p. 329–331) —
+      [spec](../03-aqua-interface/controls.md#disclosure-triangles-pp-329-331), p. 329–331
+- [ ] Disclosure buttons (p. 331–332) —
+      [spec](../03-aqua-interface/controls.md#disclosure-buttons-pp-331-332), p. 331–332
+- [ ] List views (p. 333–334) —
+      [spec](../03-aqua-interface/controls.md#list-views-pp-333-334), p. 333–334
+- [ ] Column views (p. 334–336) —
+      [spec](../03-aqua-interface/controls.md#column-views-pp-334-336), p. 334–336
+- [ ] Split views (p. 336–338) —
+      [spec](../03-aqua-interface/controls.md#split-views-pp-336-338), p. 336–338
+- [ ] Tab views (p. 338–341) —
+      [spec](../03-aqua-interface/controls.md#tab-views-pp-338-341), p. 338–341
 
 ## Grouping controls
 
-- [ ] Separators (p. 342)
-- [ ] Group boxes (p. 344)
+- [ ] Separators (p. 342–344) —
+      [spec](../03-aqua-interface/controls.md#separators-pp-342-344), p. 342–344
+- [ ] Group boxes (p. 344–345) —
+      [spec](../03-aqua-interface/controls.md#group-boxes-pp-344-345), p. 344–345
 
 ## Input / interaction behaviors
 

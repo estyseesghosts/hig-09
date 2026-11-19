@@ -58,7 +58,7 @@ therefore meant nothing. Do not reintroduce it.
 | Introduction | p. 19 | 1 | Source-verified | None |
 | I - Application Design Fundamentals | p. 23 | 4 | Source-verified | None |
 | II - The Macintosh Experience | p. 59 | 3 | Summarized | Environment and technology subsections are compressed |
-| III - The Aqua Interface | p. 95 | 9 | Summarized | Controls, User Input, and Icons have outline-level subsections |
+| III - The Aqua Interface | p. 95 | 9 | Summarized | User Input and Icons have outline-level subsections |
 | Reference | p. 367 | 4 | Summarized | Appendix A is Source-verified; glossary/revision/index are selective by design |
 
 ## Chapter status
@@ -80,7 +80,7 @@ therefore meant nothing. Do not reintroduce it.
 | [Pointers](03-aqua-interface/pointers.md) | Source-verified | None |
 | [Menus](03-aqua-interface/menus.md) | Source-verified | None |
 | [Windows](03-aqua-interface/windows.md) | Source-verified | None |
-| [Controls](03-aqua-interface/controls.md) | Summarized | Selection, indicator, text, view, and grouping controls (pp. 280-345) are outline-level |
+| [Controls](03-aqua-interface/controls.md) | Source-verified | None; window-frame control specs remain in the dedicated section |
 | [Layout Guidelines](03-aqua-interface/layout-guidelines.md) | Source-verified | None |
 | [Appendix A: Keyboard Shortcuts](04-reference/appendix-a-keyboard-shortcuts.md) | Source-verified | None; source conflicts are recorded in the appendix |
 | [Glossary](04-reference/glossary.md) | Summarized | Term inventory is summarized, not a full entry-by-entry capture |

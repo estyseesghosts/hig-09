@@ -11,7 +11,7 @@ Concrete interaction, visual, and control-level guidance for Aqua-era UI.
 - [Pointers](pointers.md) (p. 161) — Status: Source-verified
 - [Menus](menus.md) (p. 165) — Status: Source-verified
 - [Windows](windows.md) (p. 191) - Status: Source-verified
-- [Controls](controls.md) (p. 255) — Status: Summarized
+- [Controls](controls.md) (p. 255) - Status: Source-verified
 - [Layout Guidelines](layout-guidelines.md) (p. 347) — Status: Source-verified
 
 ## Use in this wiki
@@ -20,14 +20,12 @@ This is the primary section for implementation-facing notes: component behavior,
 
 ## Research status
 
-- **State:** Drag and Drop, Pointers, Menus, Text, Windows, and Layout Guidelines are **Source-verified**.
-  User Input, Icons, and Controls are **Summarized**.
+- **State:** Drag and Drop, Pointers, Menus, Text, Windows, Controls, and Layout Guidelines are
+  **Source-verified**. User Input and Icons are **Summarized**.
 - **Not yet:** Close the gaps listed below before treating any part of this section as implementation-ready.
 
 ## Open items
 
-- [ ] Controls: selection controls (pp. 280-310), indicators (pp. 310-321), text controls (pp. 321-328), view
-      controls (pp. 329-341), and grouping (pp. 341-345) are summarized at outline level.
 - [ ] User Input: keyboard, selection, and text-editing subsections are compressed into broad notes.
 - [ ] Icons: icon-creation and system-provided-image subsections need verification.
 - [ ] Drag and Drop: add acceptance tests and cross-links to `pointers.md` and `user-input.md`; source coverage
