@@ -25,6 +25,14 @@ Use this file to queue focused extraction tasks so we can learn from the PDF inc
 - [ ] Part III remaining: deeper source notes for Controls sub-sections not fully detailed (selection controls p. 280–310, indicators p. 310–321, text controls p. 321–328, view controls p. 329–341, grouping p. 341–345).
 - [ ] Part IV candidate: Help chapter content (Help Viewer, help tags, help systems — referenced at p. 81, 82, 187, 188).
 
+## Audit pass (accuracy/coverage verification)
+
+- [x] Verified source TOC (502 entries) and chapter/page mapping against wiki chapter files.
+- [x] Corrected Mobility page reference in Characteristics (was p. 38, actual p. 37).
+- [x] Completed Human Interface Design "Keep Your Users in Mind" and "Extending the Interface" sub-section coverage.
+- [x] Added missing Menus source notes (dynamic menu items, ellipsis, symbols, grouping, app/File/Edit/Format/View/Window/Help menu details).
+- [x] Expanded Windows source notes (scroll/drawer/scrolling details).
+
 ## Open questions
 
 - [ ] What exact UI surface(s)/app behavior are we recreating first?
@@ -41,3 +49,4 @@ Use this file to queue focused extraction tasks so we can learn from the PDF inc
 - **Session 5:** Controls chapter filled (window-frame, buttons, indicators, text/view/grouping controls).
 - **Session 6:** Reference chapters filled (Appendix A, Glossary, Revision History, Index notes).
 - **Session 7:** Introduction notes added (p. 19-22); component inventory drafted; part/status mapping updated.
+- **Session 8:** Accuracy/coverage audit pass completed; identified and fixed Mobility page ref, HID sub-sections, Menus source notes, Windows scroll/drawer notes; committed as audit fix.
