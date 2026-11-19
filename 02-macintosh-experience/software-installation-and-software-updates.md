@@ -2,28 +2,37 @@
 
 - **Part:** Part II: The Macintosh Experience
 - **PDF start page:** 85
-- **Status:** Stub (no research yet)
+- **Status:** Reviewed
 
 ## Why this matters (retro recreation)
 
-<!-- Briefly note why this chapter is relevant to the project once reviewed. -->
+Installation/update expectations are part of the overall user experience; for a retro recreation, the
+installation story (drag-and-drop, bundles) may or may not be in scope, but the expected behavior is documented
+here.
 
 ## Key sections to review (from TOC)
 
-<!-- Fill in sub-sections/page ranges during a targeted pass. -->
+- Packaging (p. 85)
+- Installation (p. 86)
+- Setup Assistants (p. 88)
+- Updating Installed Applications (p. 90)
 
 ## Source notes (with page refs)
 
-<!--
-- p. XXX — ...
--->
+- p. 85 — Packaging: identify system requirements; bundle software.
+- p. 86 — Installation: use Internet-enabled disk images; drag-and-drop installation; installation packages;
+  general installer guidelines.
+- p. 88 — Setup Assistants: use when more information from user is needed; intelligent defaults.
+- p. 90 — Updating installed applications: update mechanisms and expectations.
 
 ## Implementation implications
 
-<!-- Patterns, behaviors, measurements, terminology, or constraints to carry into the recreation. -->
+- Retro recreation: if recreating an installer or update flow, mirror drag-and-drop install & bundle concepts.
+
+## Assets / examples to capture later
+
+- [ ] Capture installation wizard screenshots if relevant (HIG figures).
 
 ## Open questions / follow-up extraction
 
-- [ ] Identify most relevant sub-sections for this project
-- [ ] Capture concrete rules/specs with page references
-- [ ] Note exceptions/edge cases and examples
+- [ ] Is installation part of the retro recreation scope, or only runtime UI?
