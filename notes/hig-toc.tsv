@@ -1,0 +1,503 @@
+level	page	title
+1	1	Apple Human Interface Guidelines
+2	3	Contents
+2	11	Figures and Tables
+2	19	Introduction
+2	23	Part I: Application Design Fundamentals
+3	25	The Design Process
+4	25	Involving Users in the Design Process
+5	25	Know Your Audience
+5	26	Analyze User Tasks
+5	26	Build Prototypes
+5	26	Observe Users
+5	27	Guidelines for Conducting User Observations
+4	28	Making Design Decisions
+5	29	Avoid Feature Cascade
+5	29	Apply the 80 Percent Solution
+3	31	Characteristics of Great Software
+4	31	High Performance
+4	32	Ease of Use
+4	34	Attractive Appearance
+4	34	Reliability
+4	36	Adaptability
+4	37	Interoperability
+4	37	Mobility
+3	39	Human Interface Design
+4	39	Human Interface Design Principles
+5	39	Metaphors
+5	39	Reflect the User’s Mental Model
+5	41	Explicit and Implied Actions
+5	41	Direct Manipulation
+5	42	User Control
+5	42	Feedback and Communication
+5	43	Consistency
+5	44	WYSIWYG (What You See Is What You Get)
+5	44	Forgiveness
+5	45	Perceived Stability
+5	45	Aesthetic Integrity
+5	46	Modelessness
+5	46	Managing Complexity in Your Software
+4	47	Keep Your Users in Mind
+5	47	Worldwide Compatibility
+6	47	Cultural Values
+6	48	Language Differences
+6	48	Text Display and Text Editing
+6	49	Resources
+5	49	Universal Accessibility
+6	50	Visual Disabilities
+6	50	Hearing Disabilities
+6	50	Physical Disabilities
+4	51	Extending the Interface
+5	51	Build on the Existing Interface
+5	51	Don’t Assign New Behaviors to Existing Objects
+5	52	Create a New Interface Element Cautiously
+3	53	Prioritizing Design Decisions
+4	53	Meet Minimum Requirements
+4	55	Deliver the Features Users Expect
+4	56	Differentiate Your Application
+2	59	Part II: The Macintosh Experience
+3	61	The Mac OS X Environment
+4	61	The Always-On Environment
+4	61	Disk Size and Usage Information
+4	61	Displays
+4	62	The Dock
+5	62	Conveying Information in the Dock
+5	62	Clicking in the Dock
+4	63	The Finder
+4	64	File Formats and Filename Extensions
+4	64	Internationalization
+4	65	Multiple User Issues
+4	66	Resource Management
+4	66	Threads
+3	67	Using Mac OS X Technologies
+4	67	Address Book
+4	68	Animation
+4	70	Automator
+4	71	Bonjour
+4	71	Colors
+4	72	Dashboard
+5	72	High-Level Design Guidelines for Widgets
+5	73	User-Interface Design Guidelines for Widgets
+4	74	Fonts
+4	75	Preferences
+4	76	Printing
+4	76	Security
+4	77	Services
+4	78	Speech
+4	78	Spotlight
+4	81	User Assistance
+5	81	Apple Help
+5	82	Help Tags
+3	85	Software Installation and Software Updates
+4	85	Packaging
+5	85	Identify System Requirements
+5	85	Bundle Your Software
+4	86	Installation
+5	86	Use Internet-Enabled Disk Images
+5	86	Drag-and-Drop Installation
+5	87	Installation Packages
+5	87	General Installer Guidelines
+4	88	Setup Assistants
+4	90	Updating Installed Applications
+2	95	Part III: The Aqua Interface
+3	97	User Input
+4	97	The Mouse and Other Pointing Devices
+5	97	Clicking
+5	98	Double-Clicking
+5	98	Pressing and Holding
+5	98	Dragging
+4	98	The Trackpad
+4	99	The Keyboard
+5	100	The Functions of Specific Keys
+6	100	Character Keys
+6	102	Modifier Keys
+6	103	Arrow Keys
+6	105	Function Keys
+5	106	Keyboard Shortcuts
+6	107	Reserved Keyboard Shortcuts
+6	108	Creating Your Own Keyboard Shortcuts
+6	110	User-Defined Keyboard Shortcuts
+5	110	Keyboard Focus and Navigation
+5	111	Type-Ahead and Key-Repeat
+4	112	Selecting
+5	112	Selection Methods
+6	112	Selection by Clicking
+6	112	Selection by Dragging
+6	113	Changing a Selection
+5	115	Selections in Text
+6	115	Selecting With the Mouse
+6	115	What Constitutes a Word
+6	116	Selecting Text With the Arrow Keys
+5	116	Selections in Spreadsheets
+5	117	Selections in Graphics
+4	117	Editing Text
+5	117	Inserting Text
+5	117	Deleting Text
+5	118	Replacing a Selection
+5	118	Intelligent Cut and Paste
+5	119	Editing Text Fields
+5	120	Entering Passwords
+3	121	Drag and Drop
+4	121	Drag-and-Drop Overview
+4	121	Drag-and-Drop Semantics
+5	122	Move Versus Copy
+5	122	When to Check the Option Key State
+4	122	Selection Feedback
+5	123	Single-Gesture Selection and Dragging
+5	123	Background Selections
+4	123	Drag Feedback
+4	123	Destination Feedback
+5	124	Windows
+5	124	Text
+5	124	Lists
+5	125	Multiple Dragged Items
+5	125	Automatic Scrolling
+5	125	Using the Trash as a Destination
+4	125	Drop Feedback
+5	125	Finder Icons
+5	126	Graphics
+5	126	Text
+5	126	Transferring a Selection
+5	126	Feedback for an Invalid Drop
+4	127	Clippings
+3	129	Text
+4	129	Fonts
+4	130	Style
+5	131	Inserting Spaces Between Sentences
+5	131	Using the Ellipsis Character
+5	132	Using the Colon Character
+5	135	Labels for Interface Elements
+5	136	Capitalization of Interface Element Labels and Text
+5	137	Using Contractions in the Interface
+5	137	Using Abbreviations and Acronyms in the Interface
+5	138	Developer Terms and User Terms
+3	139	Icons
+4	139	Icon Genres and Families
+4	140	Application Icons
+5	140	User Application Icons
+5	142	Viewer, Player, and Accessory Icons
+5	142	Utility Icons
+4	142	Document Icons
+4	143	Toolbar Icons
+4	144	Icons for Plug-ins, Hardware, and Removable Media
+4	145	Icon Perspectives and Materials
+4	147	Creating Icons
+5	147	Tips for Designing Icons
+5	148	A Suggested Process for Creating Icons
+5	149	Creating Icons for Mac OS X v10.5 and Later
+5	151	Scaling Your Artwork
+4	152	Designing Toolbar Icons
+5	153	Designing Icons for Icon Buttons
+5	154	Designing Icons for Capsule-Style Toolbar Controls
+5	154	Designing Icons for Rectangular-Style Toolbar Controls
+4	155	System-Provided Images
+5	156	System-Provided Images for Use in Controls
+5	157	System-Provided Images for Use as Standalone Buttons
+5	158	System-Provided Images for Use as Toolbar Items
+5	160	System-Provided Images that Indicate Privileges
+5	160	A System-Provided Drag Image
+3	161	Pointers
+4	161	Standard Pointers
+4	163	Designing Your Own Pointers
+3	165	Menus
+4	165	Menu Behavior
+4	167	Designing the Elements of Menus
+5	167	Titling Menus
+5	167	Naming Menu Items
+5	169	Using Icons in Menus
+5	170	Using Symbols in Menus
+5	172	Toggled Menu Items
+5	173	Grouping Items in Menus
+5	174	Hierarchical Menus (Submenus)
+4	175	The Menu Bar and Its Menus
+5	177	The Apple Menu
+5	177	The Application Menu
+6	178	The Application Menu Title
+6	178	The Application Menu Contents
+5	179	The File Menu
+5	181	The Edit Menu
+5	183	The Format Menu
+5	184	The View Menu
+5	186	Application-Specific Menus
+5	186	The Window Menu
+5	187	The Help Menu
+5	188	Menu Bar Extras
+4	188	Contextual Menus
+4	190	Dock Menus
+3	191	Windows
+4	191	Types of Windows
+4	192	Window Appearance
+4	194	Window Elements
+5	197	The Title Bar
+6	197	The Window Title
+6	198	Title Bar Buttons
+6	199	Indicating Changes with the Close Button
+6	199	The Proxy Icon
+5	200	Toolbars
+6	200	Toolbar Appearance and Behavior
+6	203	Designing a Toolbar
+5	205	Scope Bars
+6	206	Scope Bar Appearance and Behavior
+6	207	Designing a Scope Bar
+5	208	Source Lists
+6	209	Source List Behavior and Appearance
+6	210	Designing a Source List
+5	212	Bottom Bars
+6	212	Bottom Bar Appearance and Behavior
+6	213	Designing a Bottom Bar
+5	214	Drawers
+6	215	When to Use Drawers
+6	215	Drawer Behavior
+4	216	Window Behavior
+5	216	Opening Windows
+5	217	Naming New Windows
+5	218	Positioning Windows
+5	220	Moving Windows
+5	220	Resizing and Zooming Windows
+5	221	Minimizing and Expanding Windows
+5	221	Closing Windows
+5	222	Window Layering
+6	222	Main, Key, and Inactive Windows
+6	223	Click-Through
+5	225	Scrolling Windows
+6	227	Automatic Scrolling
+4	227	Panels
+5	229	Inspector Windows
+5	230	Transparent Panels
+6	231	When to Use Transparent Panels
+6	233	Designing a Transparent Panel
+5	234	Fonts Window and Colors Window
+5	234	About Windows
+4	235	Dialogs
+5	235	Types of Dialogs and When to Use Them
+6	236	Sheets (Document-Modal Dialogs)
+6	237	Alerts
+5	240	Dialog Appearance and Behavior
+6	240	Accepting Changes
+6	241	Dismissing Dialogs
+6	242	Providing an Apply Button in a Dialog
+6	242	Expanding Dialogs
+5	243	Find Windows
+5	243	Preferences Windows
+5	245	The Open Dialog
+5	246	Dialogs for Saving, Closing, and Quitting
+6	247	Save Dialogs
+6	249	Closing a Document With Unsaved Changes
+6	249	Attempting to Save a Locked or Read-Only Document
+6	249	Saving Documents During a Quit Operation
+5	251	The Choose Dialog
+5	253	The Print Dialog
+6	253	Print Dialog
+6	254	Page Setup Dialog
+3	255	Controls
+4	255	Window-Frame Controls
+5	256	Determining the State of a Window-Frame Control from its Appearance
+5	257	Rectangular-Style Toolbar Controls
+6	257	Rectangular-Style Toolbar Control Usage
+6	259	Rectangular-Style Toolbar Control Contents and Labeling
+6	260	Rectangular-Style Toolbar Control Specifications
+6	261	Rectangular-Style Toolbar Control Implementation
+5	261	Capsule-Style Toolbar Controls
+6	262	Capsule-Style Toolbar Control Usage
+6	263	Capsule-Style Toolbar Control Contents and Labeling
+6	264	Capsule-Style Toolbar Control Specifications
+6	264	Capsule-Style Toolbar Control Implementation
+5	264	Legacy Toolbar Controls
+4	265	Buttons
+5	265	Push Buttons
+6	267	Push Button Usage
+6	267	Push Button Contents and Labeling
+6	268	Push Button Specifications
+6	269	Push Button Implementation
+5	269	Icon Buttons
+6	270	Icon Button Usage
+6	270	Icon Button Contents and Labeling
+6	270	Icon Button Specifications
+6	271	Icon Button Implementation
+5	271	Scope Buttons
+6	271	Scope Button Usage
+6	273	Scope Button Contents and Labeling
+6	273	Scope Button Specifications
+6	273	Scope Button Implementation
+5	273	Gradient Buttons
+6	274	Gradient Button Usage
+6	275	Gradient Button Contents and Labeling
+6	275	Gradient Button Specifications
+6	276	Gradient Button Implementation
+5	276	The Help Button
+5	277	Bevel Buttons
+6	277	Bevel Button Usage
+6	278	Bevel Button Contents and Labeling
+6	278	Bevel Button Specifications
+6	279	Bevel Button Implementation
+5	279	Round Buttons
+6	279	Round Button Usage
+6	279	Round Button Contents and Labeling
+6	279	Round Button Specifications
+6	280	Round Button Implementation
+4	280	Selection Controls
+5	280	Radio Buttons
+6	281	Radio Button Usage
+6	281	Radio Button Contents and Labeling
+6	282	Radio Button Specifications
+6	283	Radio Button Implementation
+5	283	Checkboxes
+6	283	Checkbox Usage
+6	284	Checkbox Contents and Labeling
+6	285	Checkbox Specifications
+6	286	Checkbox Implementation
+5	286	Segmented Controls
+6	286	Segmented Control Usage
+6	287	Segmented Control Contents and Labeling
+6	287	Segmented Control Specifications
+6	288	Segmented Control Implementation
+5	288	Icon Buttons and Bevel Buttons with Pop-Up Menus
+5	289	Pop-Up Menus
+6	290	Pop-Up Menu Usage
+6	291	Pop-Up Menu Contents and Labeling
+6	291	Pop-Up Menu Specifications
+6	293	Pop-Up Menu Implementation
+5	293	Action Menus
+6	294	Action Menu Usage
+6	295	Action Menu Contents and Labeling
+6	295	Action Menu Specifications
+6	295	Action Menu Implementation
+5	295	Combination Boxes
+6	296	Combo Box Usage
+6	297	Combo Box Contents and Labeling
+6	297	Combo Box Specifications
+6	298	Combo Box Implementation
+5	298	Path Controls
+6	299	Path Control Usage
+6	299	Path Control Contents and Labeling
+6	299	Path Control Specifications
+6	300	Path Control Implementation
+5	300	Color Wells
+5	300	Image Wells
+5	301	Date Pickers
+6	302	Date Picker Usage
+6	303	Date Picker Implementation
+5	303	Command Pop-Down Menus
+6	304	Command Pop-Down Menu Usage
+6	304	Command Pop-Down Menu Contents and Labeling
+6	304	Command Pop-Down Menu Specifications
+6	305	Command Pop-Down Implementation
+5	305	Sliders
+6	306	Slider Usage
+6	306	Slider Contents and Labeling
+6	308	Slider Control Specifications
+6	309	Slider Control Implementation
+5	309	The Stepper Control (Little Arrows)
+6	309	Stepper Control Specifications
+5	310	Placards
+4	310	Indicators
+5	311	Progress Indicators
+6	311	Determinate Progress Bars
+6	313	Indeterminate Progress Bars
+6	314	Asynchronous Progress Indicators
+5	316	Level Indicators
+6	316	Capacity Indicators
+6	319	Rating Indicators
+6	320	Relevance Indicators
+4	321	Text Controls
+5	321	Static Text Fields
+5	322	Text Input Fields
+6	323	Text Input Field Usage
+6	323	Text Input Field Contents and Labeling
+6	324	Text Input Field Specifications
+6	325	Text Input Field Implementation
+5	325	Token Fields
+6	325	Token Field Usage
+6	326	Token Field Specifications
+6	326	Token Field Implementation
+5	326	Search Fields
+6	327	Search Field Usage
+6	327	Search Field Contents and Labeling
+6	328	Search Field Specifications
+6	328	Search Field Implementation
+5	328	Scrolling Lists
+6	328	Scrolling List Usage
+6	328	Scrolling List Contents and Labeling
+6	329	Scrolling List Specifications
+6	329	Scrolling List Implementation
+4	329	View Controls
+5	329	Disclosure Triangles
+6	330	Disclosure Triangle Usage
+6	331	Disclosure Triangle Contents and Labeling
+6	331	Disclosure Triangle Specifications
+6	331	Disclosure Triangle Implementation
+5	331	Disclosure Buttons
+6	332	Disclosure Button Usage
+6	332	Disclosure Button Contents and Labeling
+6	332	Disclosure Button Specifications
+6	332	Disclosure Button Implementation
+5	333	List Views
+6	333	List View Usage
+6	334	List View Contents and Labeling
+6	334	List View Implementation
+5	334	Column Views
+6	335	Column View Usage
+6	335	Column View Contents and Labeling
+6	336	Column View Implementation
+5	336	Split Views
+6	336	Split View Usage
+6	337	Split View Specifications
+6	338	Split View Implementation
+5	338	Tab Views
+6	338	Tab View Usage
+6	339	Tab View Contents and Labeling
+6	339	Tab View Specifications
+6	341	Tab View Implementation
+4	341	Grouping Controls
+5	342	Separators
+6	342	Separator Usage
+6	343	Separator Labeling
+6	343	Separator Specifications
+6	344	Separator Implementation
+5	344	Group Boxes
+6	344	Group Box Usage
+6	345	Group Box Contents and Labeling
+6	345	Group Box Specifications
+6	345	Group Box Implementation
+3	347	Layout Guidelines
+4	347	Positioning Regular-Size Controls in a Window Body
+5	347	A Simple Preferences Window
+5	350	A Tabbed Window
+5	353	A Standard Alert
+5	354	A Dialog with a List View
+4	356	Positioning Small and Mini Controls in a Window Body
+5	356	Layout Example for Small Controls
+5	359	Layout Example for Mini Controls
+4	361	Grouping Controls in a Window Body
+5	361	Grouping with White Space
+5	362	Grouping with Separators
+5	363	Grouping with Group Boxes
+4	365	Positioning Text and Controls in a Bottom Bar
+2	367	Appendix A: Keyboard Shortcuts Quick Reference
+2	375	Glossary
+2	383	Revision History
+2	387	Index
+3	387	A
+3	387	B
+3	388	C
+3	390	D
+3	391	E
+3	392	F
+3	392	G
+3	392	H
+3	393	I
+3	393	J
+3	393	K
+3	393	L
+3	394	M
+3	394	N
+3	394	O
+3	395	P
+3	395	Q
+3	395	R
+3	395	S
+3	397	T
+3	397	U
+3	397	V
+3	398	W
+3	398	Z

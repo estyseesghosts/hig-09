@@ -62,10 +62,16 @@ feedback, etc.). Useful both as source glossary and as checklist of vocabulary t
   - System font, word wrap, tab view, zoom button, text input field, text-to-speech, toggled menu item, token
     field, toolbar, tool palette, type-ahead, user state, view font, View menu, Window menu (p. 379–381)
 
+## Coverage boundary
+
+The glossary ends on **p. 381**; **p. 382 is blank**, **Revision History starts on p. 383**, and the **Index
+runs pp. 387-398**. There is no glossary content after p. 381, so no "remaining entries through p. 395" exist
+(an earlier note in this file incorrectly implied that range).
+
 ## Extraction targets
 
-- [ ] Full glossary entries: capture the remaining entries between p. 381 and end of glossary (through p. ~395)
-      to see the full term inventory.
+- [x] Confirm the glossary's true end page (p. 381) and the start of the next back-matter section (Revision
+      History, p. 383).
 - [ ] Map glossary terms relevant to the recreated app onto wiki chapter notes.
 
 ## Open questions / follow-up extraction

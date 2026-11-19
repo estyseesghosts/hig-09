@@ -22,8 +22,8 @@ Use this file to queue focused extraction tasks so we can learn from the PDF inc
 - [x] Part I research pass: Design Process (p. 25), Characteristics (p. 31), Human Interface Design (p. 39), Prioritizing (p. 53) — chapter notes filled.
 - [x] Part II research pass: Mac OS X Environment (p. 61), Using Mac OS X Technologies (p. 67), Installation (p. 85) — chapter notes filled.
 - [x] Part III research pass: User Input (p. 97), Drag and Drop (p. 121), Text (p. 129), Icons (p. 139), Pointers (p. 161), Menus (p. 165), Windows (p. 191), Controls (p. 255), Layout Guidelines (p. 347) — chapter notes filled.
-- [ ] Part III remaining: deeper source notes for Controls sub-sections not fully detailed (selection controls p. 280–310, indicators p. 310–321, text controls p. 321–328, view controls p. 329–341, grouping p. 341–345).
-- [ ] Part IV candidate: Help chapter content (Help Viewer, help tags, help systems — referenced at p. 81, 82, 187, 188).
+- [ ] Part III remaining: deeper source notes for Controls sub-sections not fully detailed (selection controls p. 280-310, indicators p. 310-321, text controls p. 321-328, view controls p. 329-341, grouping p. 341-345).
+- [ ] Cross-cutting Help/assistance research (not a book part): Apple Help pp. 81-84 (`02-macintosh-experience/using-mac-os-x-technologies.md`), Help menu p. 187 (`03-aqua-interface/menus.md`), Help button p. 276 and Help tags (`03-aqua-interface/controls.md`). The 2009 HIG has only three main parts; do not introduce a "Part IV."
 
 ## Audit pass (accuracy/coverage verification)
 
@@ -32,6 +32,7 @@ Use this file to queue focused extraction tasks so we can learn from the PDF inc
 - [x] Completed Human Interface Design "Keep Your Users in Mind" and "Extending the Interface" sub-section coverage.
 - [x] Added missing Menus source notes (dynamic menu items, ellipsis, symbols, grouping, app/File/Edit/Format/View/Window/Help menu details).
 - [x] Expanded Windows source notes (scroll/drawer/scrolling details).
+- [x] Page-reference audit: checked all 21 chapter boundaries and 313 section references against the PDF outline; corrected Scrolling Windows (p. 225), Column Views (p. 334), the glossary end (p. 381), the fictitious Part IV, and a stale Introduction question. See `page-reference-audit.md`.
 
 ## Open questions
 
@@ -50,3 +51,4 @@ Use this file to queue focused extraction tasks so we can learn from the PDF inc
 - **Session 6:** Reference chapters filled (Appendix A, Glossary, Revision History, Index notes).
 - **Session 7:** Introduction notes added (p. 19-22); component inventory drafted; part/status mapping updated.
 - **Session 8:** Accuracy/coverage audit pass completed; identified and fixed Mobility page ref, HID sub-sections, Menus source notes, Windows scroll/drawer notes; committed as audit fix.
+- **Session 9:** Reproducible page-reference audit added (`notes/page-reference-audit.md`, `notes/hig-toc.tsv`, `tools/audit_page_refs.py`); corrected Scrolling Windows p. 225, Column Views p. 334, glossary end p. 381, Part IV Help backlog entry, and resolved Introduction checklist item.

@@ -38,4 +38,5 @@ is organized.
 
 ## Open questions / follow-up extraction
 
-- [ ] Should the wiki have a top-level Introduction note separate from `00-source/README.md`? (Decide and record.)
+- [x] Should the wiki have a top-level Introduction note separate from `00-source/README.md`? **Decision:** yes;
+      this file (`00-source/introduction.md`) is that note. No additional top-level page is needed.

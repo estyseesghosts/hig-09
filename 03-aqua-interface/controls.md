@@ -55,7 +55,7 @@ pixel-faithful recreation.
   - Disclosure Triangles (p. 329)
   - Disclosure Buttons (p. 331)
   - List Views (p. 333)
-  - Column Views (p. 335)
+  - Column Views (p. 334)
   - Split Views (p. 336)
   - Tab Views (p. 338)
 - Grouping Controls (p. 341)
