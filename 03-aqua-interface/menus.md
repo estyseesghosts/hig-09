@@ -35,8 +35,6 @@ behavior, and contextual/Dock menus — highly fidelity-relevant.
 
 ## Source notes (with page refs)
 
-## Source notes (with page refs)
-
 - p. 165 — Menus based on "see and point"; pull-down in menu bar, Dock, contextual menus; controls-hosted
   menus discussed in Controls.
 - p. 165–166 — Menu behavior: drag from menu title to item; no action until release; can open/scan without
