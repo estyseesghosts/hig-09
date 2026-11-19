@@ -32,7 +32,7 @@ See [`00-source/README.md`](00-source/README.md) for source details and lookup w
 - [x] Source skim / section mapping (TOC read via pdf_get_toc; all chapters now mapped)
 - [x] Chapter-by-chapter research notes (Introduction, Parts I–III, Reference all researched/filled)
 - [x] Retro recreation takeaways / component inventory (see `notes/component-inventory.md`)
-- [ ] Open questions and follow-up extraction tasks
+- [x] Accuracy/coverage audit pass vs. source (fixed Mobility page ref, completed HID sub-sections, added missing Menus source notes, expanded Windows scroll/drawer notes)
 
 ## Part status
 
