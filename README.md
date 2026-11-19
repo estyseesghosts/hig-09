@@ -74,7 +74,7 @@ therefore meant nothing. Do not reintroduce it.
 | [Using Mac OS X Technologies](02-macintosh-experience/using-mac-os-x-technologies.md) | Summarized | Many technology subsections are one-line summaries; Help pp. 81-84 is a cross-cutting task |
 | [Software Installation and Software Updates](02-macintosh-experience/software-installation-and-software-updates.md) | Source-verified | None |
 | [User Input](03-aqua-interface/user-input.md) | Summarized | Keyboard, selection, and text-editing subsections are compressed into broad notes |
-| [Drag and Drop](03-aqua-interface/drag-and-drop.md) | Source-verified | Source coverage complete; needs acceptance tests and cross-links to pointers/user input |
+| [Drag and Drop](03-aqua-interface/drag-and-drop.md) | Source-verified | None |
 | [Text](03-aqua-interface/text.md) | Source-verified | None |
 | [Icons](03-aqua-interface/icons.md) | Summarized | Icon-creation and system-provided-image subsections are summarized |
 | [Pointers](03-aqua-interface/pointers.md) | Source-verified | None |

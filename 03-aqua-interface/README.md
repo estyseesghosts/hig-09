@@ -28,8 +28,6 @@ This is the primary section for implementation-facing notes: component behavior,
 
 - [ ] User Input: keyboard, selection, and text-editing subsections are compressed into broad notes.
 - [ ] Icons: icon-creation and system-provided-image subsections need verification.
-- [ ] Drag and Drop: add acceptance tests and cross-links to `pointers.md` and `user-input.md`; source coverage
-      itself is complete.
 
 ## Retro recreation takeaways
 

@@ -28,6 +28,18 @@ and valid/invalid drop cues).
   confirmation dialog before implementing the drop (example: dropping into a write-only drop box on a shared
   volume where the user cannot undo). (p. 121)
 
+## Related guidance
+
+- [Pointers](pointers.md) — standard pointer shapes, including copy, alias, poof, and not-allowed, and the
+  hotspot/hot-zone rules that determine when drag feedback changes.
+- [User Input](user-input.md) — selection methods (click, Shift-click, Command-click, range selection) that
+  produce the items a drag operates on, plus keyboard focus and text-editing behavior.
+- [Text](text.md) — insertion-point behavior and intelligent cut-and-paste rules used when text is dropped.
+- [Windows](windows.md) — active/inactive window appearance and the content-area regions that participate in
+  destination highlighting.
+- [Appendix A](../04-reference/appendix-a-keyboard-shortcuts.md) — the Option modifier is sampled at drop time;
+  no drag operation may claim a system-reserved shortcut.
+
 ## Drag-and-drop semantics (pp. 121–122)
 
 The application must determine whether to **move** or **copy** a dragged item after it is dropped. The correct
@@ -186,6 +198,36 @@ These sequences illustrate why the Option key must be sampled at **drop time** a
   drags multiple items to a destination that cannot accept all of them, **none** of the items should be
   accepted; a dialog may inform the user which data types the destination accepts and which items cannot be
   accepted.
+
+## Drag-and-drop acceptance tests
+
+Run these with the recreated UI at normal size. Each row states the setup, the action, and the observable result.
+Feedback timing and pointer names come from pp. 121-126 and [Pointers](pointers.md).
+
+| # | Scenario | Action | Expected feedback / result | Source |
+| ---: | --- | --- | --- | --- |
+| 1 | Single-gesture selection and drag | Press on an unselected Finder-style folder icon and drag immediately | Icon becomes selected at mouse-down and drags in one gesture; no second click required | p. 123 |
+| 2 | Drag from an inactive window | Select text or multiple icons in window A, click window B to make it active, then drag the still-highlighted selection from A | Background selection remains visible in A; dragging it into B works; the selection in A stays selected after the drop unless the operation moves it | p. 123 |
+| 3 | Source feedback threshold | Drag a selected item 1-2 px, then 3+ px | No drag image for the first two pixels; a translucent drag image appears at 3 px and persists while the mouse stays down | p. 123 |
+| 4 | Proxy icon delay | Press and immediately drag a document proxy icon in the title bar | The window starts to move instead of a drag; holding briefly before moving starts a drag | p. 123 |
+| 5 | Valid text destination | Drag text over an editable text area | Vertical insertion bar appears at the prospective insertion point; no whole-window highlight | p. 124 |
+| 6 | Valid list destination | Drag a row over a Finder-style sidebar/list | Horizontal insertion indicator appears between rows at the drop position | p. 124 |
+| 7 | Invalid data type | Drag a graphic over a text-only field | Field does not highlight; pointer indicates the drop is not allowed | p. 123 |
+| 8 | Same-region drag | Drag an item within one destination region and drop it there | No destination highlight while the drag stays inside the region; if the pointer leaves and re-enters, the region highlights | p. 124 |
+| 9 | Multiple items, all accepted | Drag three items over a destination that accepts all three | Destination highlights once; on drop all three are accepted in source selection order (or the destination's ordered/spatial order) | p. 125 |
+| 10 | Multiple items, one rejected | Drag three items over a destination that accepts only two types | No partial drop: destination shows invalid feedback, all three zoom back; a dialog may list accepted types | pp. 125-126 |
+| 11 | Automatic scrolling | Drag near the edge of the frontmost source window, then near an inactive window | Frontmost source window scrolls; inactive window does not | p. 125 |
+| 12 | Option sampled at drop | Drag within one container, press Option mid-drag, release Option before mouse-up | Result is a move because Option is up at drop time; no copy pointer at drop | p. 122 |
+| 13 | Option held at drop | Drag within one container, hold Option through mouse-up | Result is a copy and the copy pointer is shown | p. 122 |
+| 14 | Cross-container Option | Drag to a different container and hold Option at drop | Result remains a copy (Option is not a toggle) | p. 122 |
+| 15 | Trash destination | Drag a text selection or file icon to the Trash | A clipping appears in the Trash; dragging it back restores the data; Undo is available | p. 125 |
+| 16 | Invalid drop | Drop an item on a destination that rejects it | Item zooms back from the mouse-up point to its source; no data is transferred | p. 126 |
+| 17 | Successful Finder move | Drop a file icon on a folder icon in the same volume | Dragged icon disappears, destination folder highlight clears, and the item appears inside the folder | pp. 125-126 |
+| 18 | Successful text drop | Drop styled text into a styled-text destination | Text appears highlighted at the insertion point with its font, typeface, and size preserved | p. 126 |
+| 19 | Drop into a window with a selection | Drop an item into a window that already has an unrelated selection | Destination selection clears before the drop; the dropped item becomes the new selection | p. 126 |
+| 20 | Clipping round-trip | Drag an item to the desktop, then drag the clipping back to its source | A clipping is created; dragging it back produces data identical to the original item | p. 127 |
+| 21 | Discontinuous clipping | Drag a Command-click discontinuous selection to the Finder | One clipping is created per selected item | p. 127 |
+| 22 | Undo or confirmation | Perform an enabled drag operation, then attempt a non-undoable drop (for example a write-only drop box) | Undo reverses the undoable operation; the non-undoable drop shows a confirmation dialog before committing | p. 121 |
 
 ## Clippings (p. 127)
 
