@@ -79,8 +79,11 @@ panel windows, title bars, toolbars, drawers, dialogs, save flows.
   hierarchy; no controls other than organize controls; gradient buttons for add/remove if no bottom bar.
 - p. 212–214 — Bottom bars: controls affect window-body contents; not customizable; 32px (regular) or 22px
   (small) height; not for most-frequent commands.
-- p. 214–216 — Drawers: slide out from parent; frequent controls not always visible; modal? no—parent stays
-  visible; close on minimize; resize rules; state maintained.
+- p. 214–216 — Drawers: slide out from parent window; parent stays visible (not modal); close on minimize;
+  resize rules; state maintained.
+  - p. 216 — Scrolling windows: scroll bars (horizontal/vertical/both) shown when content exceeds window;
+    automatic scrolling for user-initiated scroll.
+  - p. 227 — Automatic scrolling: scroll during drag or scroll-wheel navigation when user reaches edge.
 - p. 216–227 — Window behavior: opening triggers; untitled naming ("untitled", "untitled 2"); positioning
   (horizontally centered, below menu bar, 20px offset, no Dock overlap); moving; resize/zoom (user state after
   7px change; zoom toggles standard/user state); minimize; close; layering; main/key/inactive windows; click-

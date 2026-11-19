@@ -46,7 +46,7 @@ perceived performance, ease of use, appearance, reliability, and adaptability.
   drag and drop, AppleScript, Bonjour, Services; avoid custom file formats when possible; use same file format
   across platforms; support filename extensions; use standard protocols (XML preferred) for data interchange;
   save config via preferences system.
-- p. 38 — Mobility: programs shouldn't waste battery polling/accessing peripherals unnecessarily; avoid
+- p. 37 — Mobility: programs shouldn't waste battery polling/accessing peripherals unnecessarily; avoid
   requiring CD insertion; minimize hard-drive/optical-drive access; be forgiving if network volumes go
   offline; be sensitive to screen changes and monitor plug/unplug.
 

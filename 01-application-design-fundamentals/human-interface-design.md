@@ -27,7 +27,18 @@ to component behaviors the recreation will need to implement (menus, windows, co
   - Managing Complexity in Your Software (p. 46)
 - Keep Your Users in Mind (p. 47)
   - Worldwide Compatibility (p. 47)
+    - Cultural Values (p. 47)
+    - Language Differences (p. 48)
+    - Text Display and Text Editing (p. 48)
+    - Resources (p. 49)
+  - Universal Accessibility (p. 49)
+    - Visual Disabilities (p. 50)
+    - Hearing Disabilities (p. 50)
+    - Physical Disabilities (p. 50)
   - Extending the Interface (p. 51)
+    - Build on the Existing Interface (p. 51)
+    - Don't Assign New Behaviors to Existing Objects (p. 51)
+    - Create a New Interface Element Cautiously (p. 52)
 
 ## Source notes (with page refs)
 
@@ -60,11 +71,29 @@ to component behaviors the recreation will need to implement (menus, windows, co
 - p. 46 — Modelessness: allow users to do whatever they want; avoid modes locking user into operation;
   drawers/sheets preferred; acceptable modes: short-term, alerts, installers; if modes used, clear visual
   indicator, easy to enter/exit.
-- p. 47 — Worldwide Compatibility: design for locale/cultural differences; visible elements localizable;
-  avoid offensive imagery (owl example); different calendars; text translation up to 50% longer; Unicode
-  support; resources in separate files; logical (not visual) content flow for RTL.
-- p. 49 — Universal Accessibility: build in support from beginning; don't override system accessibility
-  features (keyboard-only operation, VoiceOver, etc.).
+- p. 46 — Managing Complexity: progressive disclosure (disclosure triangles/buttons); inspector windows/info
+  windows; preferences; keep design simple and focused.
+
+- p. 47 — Keep Your Users in Mind: design for worldwide compatibility and universal access.
+  - p. 47 — Cultural Values: visible elements localizable; avoid culturally offensive imagery; avoid
+    holidays/seasons imagery that don't localize; different calendars across regions.
+  - p. 48 — Language Differences: avoid colloquial phrases; translated text can grow ~50%; use complete
+    sentences; avoid concatenating words (grammar differs across languages).
+  - p. 48 — Text Display and Text Editing: support Unicode; text may not be left-to-right/read linearly;
+    system/app fonts may change; keep logical (not visual) content flow for RTL.
+  - p. 49 — Resources: store region-dependent info in separate resource files; consider text size/location/
+    direction in window layouts.
+  - p. 49 — Universal Accessibility: build in support from beginning; don't override system accessibility
+    features (keyboard-only operation, VoiceOver, etc.).
+  - p. 50 — Visual Disabilities: high contrast, text-size handling, onscreen zoom, VoiceOver, don't rely
+    solely on color coding.
+  - p. 50 — Hearing Disabilities: never rely solely on sound; provide visual cues alongside sound; use
+    standard system alert for attention.
+  - p. 50 — Physical Disabilities: Sticky Keys, Mouse Keys, full keyboard access mode; don't override
+    assistive-tech keyboard shortcuts.
+
+- p. 51 — Extending the Interface: build on existing interface; don't assign new behaviors to existing
+  objects; create new interface elements cautiously.
 
 ## Implementation implications
 
