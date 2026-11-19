@@ -47,7 +47,11 @@ behavior, and contextual/Dock menus — highly fidelity-relevant.
 - p. 167 — Menu titles should represent items; avoid icons for titles; short titles. Menu item names are
   actions (verbs, base form) or attributes (adjectives, "Change the selected object to…"); unavailable items
   dimmed; title-style capitalization; avoid articles.
-- p. 167 — Ellipsis character (…) after menu item indicates additional info required to complete a command.
+- p. 167 (menu item naming): commands that require additional information before execution follow the shared
+  ellipsis rules in [Text](text.md#using-the-ellipsis-character) (pp. 131-132). Use a single Unicode ellipsis
+  character (`…`, Option-semicolon), not three periods. An ellipsis is not used merely because another window
+  may appear; see Text for positive/negative rules and examples (e.g. Open…, Save As…, Print…, Preferences…
+  vs. New, Save, Copy, Get Info, Close, Quit). (pp. 131-132, 167)
 - p. 168 — Dynamic menu items: commands that change when user presses a modifier key (e.g. Option key on the
   Finder Window menu changes Minimize → Minimize All); system sizes menu to hold widest item including
   Option-enabled commands. Never the only way to accomplish a task; only a single modifier key to reveal.
@@ -71,11 +75,33 @@ behavior, and contextual/Dock menus — highly fidelity-relevant.
 - p. 177 — Application menu: About, Preferences…, Services, Hide, Hide Others, Show All, Quit; title bold,
   ≤16 chars, no version; About uses short name; Quit preceded by separator; other app-specific items between
   Preferences and Services (no Help item — that's in Help menu).
-- p. 179 — File menu: New, Open, Open Recent, Close, Close File, Save, Save As, Export As, Save All, Revert to
-  Saved, Print, Page Setup; Open Recent submenu most-recent-first, display names not paths; Close Option =
-  Close All (Cmd-Option-W); Save dims when unsaved; Save As uses Save dialog + Format pop-up (avoid multiple
-  Save As Format commands; use Export As instead); Export As keeps original open; Save All; Revert to Saved +
-  alert; Print… (Cmd-P); Page Setup… (Cmd-Shift-P).
+- p. 179-180 - File menu: New, Open, Open Recent, Close, Close File, Save, Save As…, Export As…, Save All,
+  Revert to Saved, Print…, Page Setup… (commands that require specific input or always open a separate window
+  in this context use an ellipsis; see [Text](text.md#using-the-ellipsis-character) for the 2009 HIG rules,
+  pp. 131-132). Open Recent submenu most-recent-first, display names not paths; Close Option = Close All
+  (Cmd-Option-W).
+  - **Save / Save As… / Export As… document-state rules (pp. 179-180):**
+    - **Never-saved document:** Save is **dimmed**. **Save As…** is **enabled** and opens the Save dialog so the
+      user can name and locate the document. (p. 180)
+    - **Previously saved document, unchanged since last save/open:** Save is **dimmed**. (p. 180)
+    - **Previously saved document with unsaved changes:** Save is **enabled**; it saves the active document,
+      leaves it open, and provides feedback indicating that the document is being (or has been) saved. (p. 180)
+    - **Save As… (Command-Shift-S):** displays the Save dialog, allowing the user to save a copy of the active
+      document with a new user-defined name, a new location, or both. The newly saved document remains open and
+      active and displays the new name (if changed). The previously saved version retains its name, location,
+      and format, and remains closed. Avoid multiple “Save As Format” commands; use the **Format** pop-up menu
+      in the Save dialog instead. (p. 180)
+    - **Export As…:** displays the Save dialog to save a copy of the active document in a format the application
+      does not handle. As with Save As…, the user may choose a new name/location; unlike Save As…, the
+      **original** document remains open so the user can continue working in the current format, and the newly
+      saved document should not automatically open. Change the document-name text field label in the Save
+      dialog from “Save As:” to “Export As:”. Provide this command only when it is important to work in one
+      format and save a copy in a format the application does not handle. (pp. 180-181)
+  - Save All: saves changes to all open documents. Revert to Saved discards changes since last save/open and
+    must warn with an alert about potential data loss. Print… (Cmd-P) and Page Setup… (Cmd-Shift-P) follow
+    standard File-menu behavior. (pp. 180-181)
+  - See [Windows](windows.md#dialogs-for-saving-closing-and-quitting) for save/close/quit dialog and alert
+    behavior (pp. 246-251).
 
 - p. 181 — Edit menu: Undo, Redo, Cut, Copy, Paste, Paste and Match Style, Delete, Select All, Find,
   Find Next, Spelling, Speech, Special Characters; Undo naming ("Undo Typing", "Undo Paste", "Can't Undo");

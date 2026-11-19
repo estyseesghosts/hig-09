@@ -108,10 +108,15 @@ pixel-faithful recreation.
   use push button to display information or mimic other controls; do not use as a label (use static text);
   avoid associating a menu with a push button (use bevel button). Always text-only (no image; use bevel button).
   Label = verb/verb phrase ("Save", "Close", "Print", "Delete", "Change Password"); specific when acting on a
-  single setting ("Choose Picture…" not "Choose…"); no "now" needed; ellipsis when action opens another window
-  (e.g. Mail preferences opens .Mac preferences). Default button = safe action in dialog, Return/Enter
-  activates; when user presses nondefault (e.g. Cancel), it acquires color and default loses color; system-
-  provided buttons handle this automatically.
+  single setting ("Choose Picture…" not "Choose…"); no "now" needed. Apply the shared ellipsis rules in
+  [Text](text.md#using-the-ellipsis-character) (pp. 131-132): use an ellipsis when the action requires
+  specific additional input/choices or opens a separate window or dialog in which the user performs that
+  input (for example **Print…**, **Save As…**, **Choose Picture…**; opening another app’s preferences to
+  complete a task is a separate user task). Do **not** add an ellipsis merely because another window may
+  appear (for example **Save**, **Copy**, **Get Info**, or **New** in the general case; see Text for
+  counterexamples). Default button = safe action in dialog, Return/Enter activates; when user presses
+  nondefault (e.g. Cancel), it acquires color and default loses color; system-provided buttons handle this
+  automatically. (pp. 131-132, 265-269)
 - p. 265–269 — Push button specs: regular/small/mini sizes; height fixed per size, width by label length (don't
   clip). Font: system font per size (auto via IB). Spacing: ≥12 px between buttons (regular), 10 (small),
   8 (mini); destructive actions (Delete) farther from safe buttons.

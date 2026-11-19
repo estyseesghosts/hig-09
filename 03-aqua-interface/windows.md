@@ -99,6 +99,98 @@ panel windows, title bars, toolbars, drawers, dialogs, save flows.
 
 - [ ] Capture window screenshots from `../images/` (e.g. System Preferences, TextEdit Open) for fidelity.
 
+<a id="dialogs-for-saving-closing-and-quitting"></a>
+
+## Dialogs for Saving, Closing, and Quitting (pp. 246–251)
+
+This section covers the standard dialogs/sheets used when a user saves a document for the first time, closes
+a document, or quits an application. (p. 246)
+
+### Save dialogs (pp. 247–248)
+
+- Applications that save the contents of individual windows (most text and graphics applications) should use
+  **document-specific sheets** for Save dialogs. (p. 247)
+- Save dialogs have two states: **minimal** and **expanded**. Clicking the disclosure button toggles between
+  them. If the user changes the state, the next Save dialog should open in the selected state. (p. 247)
+- Pass in a filename extension as part of every filename. Users can control its visibility using the
+  **Hide Extension** checkbox in the expanded Save dialog. Existing documents do not get extensions added or
+  removed unless the user chooses **Save As…** and changes the setting in the Save dialog. (p. 247)
+- **Minimal Save dialog (p. 247):** lets users specify a name and choose a frequently accessed location.
+  Elements include: **Save As** text field (Command-Shift-G lets expert users enter pathnames with `/` as
+  separator); **Where** pop-up menu (mounted volumes, Finder sidebar folders, Recent Places); **Save**
+  (default), **Cancel**, and a disclosure button. If the document has not been saved previously, put the
+  default name (such as “untitled”) in the field and select the filename (if the extension is visible it is not
+  selected). If the document has been saved previously and the user chooses **Save As…**, open with the document
+  name highlighted in the Save As field (visible extension not selected). Any custom elements go between the
+  Where pop-up menu and the buttons.
+- **Expanded Save dialog (p. 248):** adds back/forward navigation, a source list mirroring the Finder sidebar,
+  column or list view for file-system navigation, a **File Format** (or **Format**) pop-up menu, **New Folder**
+  button, and **Hide extension** checkbox (selected by default so extensions do not appear unless requested).
+  If the user changes the checkbox state for a particular document, the next new document should match the
+  last user-selected state, even after quit/reopen. The filename in the Save As field updates in real time as
+  the checkbox changes. Custom elements should appear above Cancel/Save and, when expanded, between the
+  file-system browser and the push buttons. In default keyboard navigation mode, Tab moves focus from Save As
+  text field to source list, to visible columns, and back to the text field.
+- **Save As… vs. Export As… (cross-reference, pp. 179–181):** Save As… saves a copy with a new name/location
+  (or both) and makes that newly saved document the open/active one while the previously saved version remains
+  closed. Export As… saves a copy in a format the application does not handle while the **original** document
+  remains open and the exported copy does not automatically open; the Save dialog’s document-name label should
+  read “Export As:”. See [Menus](menus.md) for File-menu command behavior and document-state rules.
+
+### Document state and File-menu command behavior (pp. 179–180, cross-reference)
+
+| Document state | **Save** | **Save As…** | Notes |
+| --- | --- | --- | --- |
+| Never saved (“untitled”) | **Dimmed** | **Enabled**; opens Save dialog to name/locate | Save dialog uses default name (e.g. “untitled”) with filename selected; extension (if visible) not selected. (pp. 180, 247) |
+| Previously saved, no changes since last save/open | **Dimmed** | Available per File menu behavior (saves a copy with new name/location; newly saved doc becomes open/active) | Save provides feedback when saving a document with changes. (p. 180) |
+| Previously saved, has unsaved changes | **Enabled**; saves active document, leaves open, provides save feedback | Available (creates renamed/relocated copy as open/active document) | Use Save Changes alerts on close/quit as applicable. (pp. 180, 249–250) |
+
+- **Export As…** is distinct: it produces a copy in a format the app does not handle, leaves the original open,
+  and should not automatically open the exported copy. (pp. 180–181)
+
+### Closing a document with unsaved changes (p. 249)
+
+- When the user attempts to close a document that has unsaved changes, present a **Save Changes** alert. An
+  application that saves contents of individual windows should use document-specific sheets for this alert.
+- In an application that can display multiple views of the same file, if the user chooses **Close File** instead
+  of **Close Window**, use an application-modal dialog (emphasizes the whole-file effect) and change “document”
+  to “file” in the alert message. After the user clicks **Save** or **Don’t Save**, close all open views of the
+  file.
+- When a Save Changes sheet is open, the document’s close button and the Close command in the File menu are
+  unavailable until the sheet is addressed.
+
+### Attempting to save a locked or read-only document (p. 249)
+
+- If the user edits a locked or read-only document and then quits the application or chooses Save, do not
+  display the standard Save Changes alert. Instead, display a sheet explaining that because the document is
+  read-only it cannot be saved, and offer options to **save a copy**, **reject the changes**, or **continue to
+  view or edit** the document.
+
+### Saving documents during a quit operation (pp. 249–251)
+
+- Users can interrupt a quit operation with documents still unsaved (for example, a save alert sheet is open but
+  the user works on other documents or switches apps without addressing it). (p. 249)
+- When a user quits an application in which all open documents have been saved, all documents close
+  immediately and the application quits. (p. 249)
+- **Quitting an application that is not document-based** but has many windows whose contents are saved
+  simultaneously: present an application-modal Save Changes alert. (p. 250)
+- **Quitting a document-based application with more than one document with unsaved changes open:** present an
+  application-modal **Review Changes** alert (Discard Changes, Cancel, Review Changes). **Discard Changes**
+  closes all documents without saving and quits. **Cancel** cancels Quit. **Review Changes** brings all open
+  documents forward (including minimized in Dock) with unsaved documents on top; the active document presents a
+  **Save Before Quitting** alert. If the user clicks Save, show the Save dialog if needed; if Don’t Save, the
+  next unsaved document presents its alert; when the last Save Before Quitting alert is dismissed with Save or
+  Don’t Save, all documents close and the application quits. (p. 250)
+- During review, activating another unsaved document brings it forward with its Save Before Quitting sheet open
+  (other sheets remain open). Activating a saved document lets the review continue when the next unsaved
+  document becomes active. If the user clicks the Dock icon or chooses Bring All to Front during review,
+  documents appear in this order: documents with open sheets on top, unsaved documents next, then saved
+  documents. At any time during review the user can click Cancel to stop quit; initiating Quit during review
+  restarts with the application-modal Review Changes alert. (pp. 250–251)
+- **Saving a document with the same name as an existing document:** if the user types the name of an existing
+  document in the same location into the Save As field and clicks Save, present an application-modal alert to
+  confirm whether to replace the previous document. (p. 251)
+
 ## Open questions / follow-up extraction
 
 - [ ] Does the recreated app use document windows, application windows, panels? (Depends on app scope.)
