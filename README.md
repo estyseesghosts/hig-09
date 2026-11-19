@@ -23,7 +23,7 @@ See [`00-source/README.md`](00-source/README.md) for source details and lookup w
 - [`03-aqua-interface/`](03-aqua-interface/README.md) — Part III (p. 95)
 - [`04-reference/`](04-reference/README.md) — appendices/reference material
 - [`templates/`](templates/) — reusable note templates
-- [`notes/`](notes/) — cross-cutting notes and research backlog
+- [`notes/`](notes/) — cross-cutting notes, research backlog, and retro recreation component inventory
 
 ## Status
 
@@ -31,7 +31,7 @@ See [`00-source/README.md`](00-source/README.md) for source details and lookup w
 - [x] Initial scaffold created
 - [x] Source skim / section mapping (TOC read via pdf_get_toc; all chapters now mapped)
 - [x] Chapter-by-chapter research notes (Introduction, Parts I–III, Reference all researched/filled)
-- [x] Retro recreation takeaways / component inventory (drafted in part READMEs; fuller inventory pending)
+- [x] Retro recreation takeaways / component inventory (see `notes/component-inventory.md`)
 - [ ] Open questions and follow-up extraction tasks
 
 ## Part status
