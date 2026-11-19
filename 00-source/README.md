@@ -10,7 +10,7 @@
 
 ## High-level contents (from TOC)
 
-- Introduction (p. 19)
+- Introduction (p. 19) — see [`introduction.md`](introduction.md)
 - **Part I: Application Design Fundamentals** (p. 23)
   - The Design Process (p. 25)
   - Characteristics of Great Software (p. 31)
