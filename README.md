@@ -2,6 +2,10 @@
 
 Research wiki for a retro recreation project based on **Apple Human Interface Guidelines (2009)**.
 
+> **Visibility:** this repository is **public**. It is a personal research notebook, not an official Apple,
+> HIG, or product documentation site. Read [Source and provenance](00-source/README.md#copyright-and-redistribution)
+> before reusing the bundled PDF or screenshots: no redistribution license is documented.
+
 ## Source
 
 - PDF: `Apple-OSXHIGuidelines-2009.pdf`
@@ -99,5 +103,6 @@ therefore meant nothing. Do not reintroduce it.
 - [Research backlog](notes/research-backlog.md)
 - [Component inventory](notes/component-inventory.md)
 - [Image and figure inventory](notes/image-inventory.md)
+- [Source and provenance](00-source/README.md#copyright-and-redistribution)
 - [Chapter notes template](templates/chapter-notes.md)
 - [Research note template](templates/research-note.md)

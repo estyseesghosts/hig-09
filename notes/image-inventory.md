@@ -19,7 +19,10 @@ carries, and which chapter it supports. It deliberately separates **known** fact
   evaluation window). Everything else is **unknown**.
 - **Origin.** These are repository-supplied captures of a running Mac OS X environment, not scans of HIG
   figures. The person/device that produced them is not recorded. No license or redistribution grant is
-  documented; see [Source and provenance](../00-source/README.md).
+  documented; see [Source and provenance](../00-source/README.md#copyright-and-redistribution).
+- **Credit / rights.** The interface content shown belongs to Apple Inc. and the respective application
+  vendors. Each row's "HIG use" is this project's attribution of what the capture documents, not a claim of
+  ownership or permission. No image may be assumed reusable.
 - **HIG figures.** No HIG figure bitmap is stored in the repository. HIG figure ranges are cited in the chapter
   notes; the capture matrix below records where a screenshot is standing in for a missing figure.
 
