@@ -2,7 +2,7 @@
 
 - **Part:** Part III: The Aqua Interface
 - **PDF start page:** 191
-- **Status:** Summarized
+- **Status:** Source-verified
 
 ## Why this matters (retro recreation)
 
@@ -101,9 +101,214 @@ panel windows, title bars, toolbars, drawers, dialogs, save flows.
 
 - [ ] Capture window screenshots from `../images/` (e.g. System Preferences, TextEdit Open) for fidelity.
 
+<a id="dialogs"></a>
+
+## Dialog fundamentals and auxiliary windows (pp. 235-244)
+
+A dialog is a window designed to elicit a response; alerts are dialogs that communicate error conditions or
+warn about hazardous situations. (p. 235)
+
+### Dialog types and scope (pp. 235-236)
+
+| Type | What it blocks | Appearance and dismissal | Use when |
+| --- | --- | --- | --- |
+| **Modeless** | Nothing; the user can keep working in document windows | Usually only the close button in the title bar; no zoom/minimize | Settings the user changes while continuing to work (for example, a Find window) |
+| **Document modal** | One document; the user can switch to other documents and applications | Should be implemented as a **sheet** attached to the document window | The response applies to a single document (save, print, document-specific alert) |
+| **Application modal** | The whole application; the user can switch to other applications | Usually no standard title-bar controls; dismissed with a push button such as OK or Cancel | The response affects the application or several documents/windows |
+| **Alert** | Depends on scope: document modal (sheet) if it applies to one document; application modal if it applies to the app state or multiple documents/windows | Standard alert elements (below) | Errors, warnings, and hazardous-action confirmations |
+
+- A command-initiated application-modal dialog (for example, Open) should have a title that matches the
+  command. (p. 236)
+- Most application-modal dialogs omit close/minimize/zoom; the user dismisses them with a push button.
+  (p. 236)
+
+### Sheets: document-modal dialogs (pp. 236-237)
+
+- A sheet is modal and attached to a particular document or window, so the user never loses track of which
+  window it applies to. It has **no title of its own**. (p. 236)
+- Sheets animate out of the window's title bar. If a sheet is wider than a window near the screen edge, the
+  window moves away from the edge; it returns to its previous position when the sheet is dismissed. (p. 236)
+- **Only one sheet may be open for a window at a time.** The sheet blocks all other operations on that window.
+  If a response requires another sheet for the same document, close the first sheet before opening the second.
+  (p. 236)
+- Layering: a sheet on the active document covers active panels if necessary. If the user leaves the sheet open
+  and activates another document in the same app, the inactive window and its sheet go behind open panels.
+  (p. 237)
+- An application that allows multiple windows for the same document should **not** use a sheet; use an
+  application-modal dialog so it is clear that changes affect all views. (p. 237)
+- A single-window app that switches documents in one view (for example, a tabbed browser) **can** use a sheet
+  for the current document, because the user effectively dismisses that view when switching documents. (p. 237)
+
+**Use sheets for:** document-specific saving or printing; a modal dialog in a single-window app that does not
+create documents (for example, accepting a license); other window-specific dialogs normally dismissed before
+work continues. (p. 237)
+
+**Do not use sheets for:** dialogs that apply to several windows; modeless operations the user leaves open to
+observe changes (find/replace, panels, drawers); windows without a title bar (a sheet needs a definite visual
+edge); or when the user needs information in the window that is essential to filling in the dialog. (p. 237)
+
+### Alert elements (pp. 238-239)
+
+An alert should contain only these elements:
+
+1. **Alert message text** — emphasized (bold) system font; a short, complete-sentence summary of the error or
+   condition, often phrased as a question.
+2. **Informative text** — small system font; a fuller description of the situation, its consequences, and ways
+   out. **Do not omit it.** What seems intuitive to the developer may not be intuitive to users.
+3. **Buttons** — named for the action the user performs (Erase, Save, Delete). The rightmost button is the
+   **action button** that confirms the alert message; it is usually, but not always, the default button.
+4. **Application icon** — required so the user can tell which application is displaying the alert in the window
+   layering model.
+
+Caution icon: in rare cases, badge a caution icon with the application icon. Use it only when a task (for
+example, installing software) could inadvertently destroy data. Do **not** use it for tasks whose only purpose
+is to overwrite or remove data (Save, Empty Trash); overuse dilutes its meaning. (p. 238)
+
+Writing alert messages (p. 239):
+
+- State clearly what caused the alert and what the user can do about it.
+- Use the user's vocabulary, not developer terms.
+- Provide a suggestion about what to do next, even for a notification with no required action.
+- Layout guidance is in "A Standard Alert" (p. 353).
+
+### Dialog appearance and behavior (pp. 240-241)
+
+- Show default values for controls and text fields when appropriate, so the user verifies rather than
+  generates information.
+- Put the initial selection or insertion point in the first location that accepts input (text field or list).
+- Make static text selectable when it provides an obvious benefit: error messages, serial numbers, IP addresses.
+- In resizable column dialogs such as Open, columns grow and additional columns appear as the dialog grows;
+  other elements keep their size and anchor left, center, or right.
+- There are three possible validation moments: while typing, when leaving a field (Tab), and when clicking a
+  button to apply. Make the state clear to the user. Checkboxes and radio buttons update immediately.
+- Validating after every keystroke is usually annoying; prefer preventing invalid input (for example,
+  auto-uppercasing where appropriate).
+- Decide when input applies: immediately (for example, Finder View Options) or on an action such as Apply.
+- In a multi-pane dialog (buttons, tabs, pop-up), do not validate when the user switches panes.
+- An operation that completes quickly and returns control within a couple of seconds may run automatically.
+  For longer operations, state the estimated time and let the user initiate it.
+
+### Dismissing dialogs (pp. 241-242)
+
+- All bottom-right buttons dismiss the dialog. The action button is furthest right and confirms the message.
+  Cancel is to its left.
+- A third dismissal button goes left of Cancel. If it can cause data loss (for example, Don't Save), place it
+  **at least 24 pixels** from the safe buttons (Cancel, Save).
+- A button that affects the dialog contents itself, such as Reset, aligns its left edge with the main dialog
+  text, or sits 12 pixels to the right of a Help button.
+- The default button is usually the rightmost button or Cancel, and represents the action the user is most
+  likely to take **if that action is not dangerous**. It has color and pulses. Return or Enter activates it.
+- Do **not** provide a default button when the most likely action is dangerous (for example, data loss). With
+  no default, Return and Enter do nothing and the user must click explicitly. A safe default such as Cancel is
+  allowed.
+- Do not use a default button if Return is used in text entry fields; one key with two behaviors is confusing.
+- Include a Cancel button that returns the computer to its prior state. Always map **Command-period** and
+  **Esc** to Cancel.
+- Do not assign other shortcuts to dialog buttons as a rule; follow the keyboard-shortcut guidelines if a
+  frequently used button needs one (p. 106).
+
+### Apply buttons (p. 242)
+
+- Apply lets the user preview multiple settings without committing. Use it only when previewing is meaningful;
+  avoid it for long or hard-to-reverse operations. Save dialogs and changes that cannot be previewed easily
+  should not have Apply.
+- Apply does not dismiss the dialog. OK accepts the previewed changes; Cancel rejects them. Cancel must undo
+  applied previews and must never silently commit them.
+
+### Expanding dialogs (p. 242)
+
+- A **disclosure triangle** expands a dialog to reveal detail and, if appropriate, extra functionality
+  (Figure 15-76, p. 330; see "Disclosure Triangles", p. 329).
+- A **disclosure button** expands a dialog to reveal additional choices related to a pop-up or command
+  pop-down selection (Figure 14-58, p. 248; see "Disclosure Buttons", p. 331).
+
+### Find and Preferences windows (pp. 243-244)
+
+- A **Find window** is modeless, opened by Find. Document-based apps can use one Find window across documents;
+  non-document or single-window apps may put search/filtering in a scope bar instead (pp. 205, 243).
+- A **preferences window** is modeless and contains infrequently changed settings. It is typically opened from
+  the application menu as **Preferences** with **Command-comma**, and changes are expected to take effect when
+  the window closes. (pp. 243-244)
+- Preferences with several unrelated categories may use a toolbar as a category switcher. That toolbar must
+  **not** be customizable and must not have a show/hide control; hiding it would hide all but the current
+  settings, and novices may mistake the control for the close button. (p. 244)
+- A preferences window has **no resize control** and no active minimize or zoom buttons; it is not meant to be
+  resized or left open. (p. 244)
+- With changeable panes, the window title is the selected pane's title (for example, "General"). With no panes,
+  the title is "<Application Name> Preferences". Remember the last selected pane. (p. 244)
+
+## Standard file and print dialogs (pp. 245-254)
+
+### Open dialog (pp. 245-246)
+
+- Opened by Open or **Command-O**; it is **application modal** (the user can switch applications).
+- If the app has Open, it should also provide **Open Recent**.
+- Elements: default title "Open", changed to include the app name (for example, "TextEdit: Open"); back and
+  forward buttons; a pop-up menu of common places and **Recent Places** (the five most recent folders); a
+  source list mirroring the Finder sidebar; a column or list view; **Cancel** and **Open** (default); a resize
+  control in the lower-right corner.
+- Default location is specified by the app, typically a predefined folder in the user's home folder; remember
+  the user's last selection.
+- **Command-Shift-G** lets expert users type a pathname; the separator is `/`.
+- Optional filtering pop-up: non-matching items are dimmed; include an **All Applicable Files** item (not
+  necessarily the default).
+- Support document preview; support multiple selection if the app allows multiple open documents.
+
+### Choose dialog (pp. 251-252)
+
+- Lets the user select an item as the target of a task (for example, fixing a broken alias).
+- An app can have more than one Choose dialog, but **only one can be open at a time**. It can be a sheet when
+  appropriate.
+- Can support multiple selection, document preview, and resizing via the lower-right resize control.
+- Optional **Show** pop-up filters file types; non-matching items are dimmed. Include **All Applicable Files**
+  (not necessarily the default).
+- If not a sheet, the default title is "Choose"; change it to the task name (for example, "Choose Picture") and
+  add instructional text at the top. The Choose button can be made more specific.
+- Default location is the user's home folder; for volume-only targets, the user's directory. Dim items that
+  are not appropriate targets.
+- **Recent Places does not record folders selected in Choose dialogs** (p. 253).
+
+### Print dialog (pp. 253-254)
+
+- The **minimal Print dialog** lets the user choose a printer and settings, save/mail/fax the document as PDF or
+  PostScript, and preview before printing. The **expanded** dialog adds copies, page range, paper settings, and
+  layout.
+- The standard Print dialog is a **sheet attached to the document window**.
+- Options are organized in panes selected by the **features pop-up menu**; panes are supplied by printing dialog
+  extensions (PDEs) from the OS, printer modules, and applications.
+- The PDF pop-down menu (lower left) saves as PDF/PostScript, faxes, or sends to applications such as iPhoto.
+- Custom print panes: choose a menu item name that does not conflict with existing features; make the pane name
+  describe its options; keep features appropriate to the app (for example, reverse printing belongs to the OS,
+  which knows the hardware); make interdependencies clear (selecting double-sided printing disables
+  transparencies); separate advanced features and label them "advanced options"; provide visual feedback such as
+  a preview; save printing preferences with the document, at least while it is open, and allow custom settings
+  to be saved.
+
+### Page Setup dialog (p. 254)
+
+- Sets scaling and orientation for the intended paper size and printer.
+- **Save the settings with the document** (Figure 14-64, p. 254).
+
+## Dialog workflow test matrix (pp. 235-254)
+
+| Workflow | Expected dialog/sheet | Expected result and cancellation |
+| --- | --- | --- |
+| Save a never-saved document | Document-specific Save **sheet**, minimal state; default name selected; Save default | Saves with name/location; Cancel returns to the document unchanged |
+| Save As an existing document | Save sheet with name highlighted; Save default | On name collision, application-modal replace-confirmation alert (p. 251) |
+| Close a document with unsaved changes | **Save Changes sheet**; close button and Close command disabled until addressed | Save / Don't Save / Cancel; Cancel leaves document open |
+| Close File with multiple views | **Application-modal** Save Changes dialog, message says "file" | Save/Don't Save closes **all** views of the file |
+| Save/quit a locked or read-only document | Sheet explaining it cannot be saved | Save a copy / reject changes / continue viewing or editing |
+| Quit with all documents saved | No alert | All documents close immediately; app quits |
+| Quit a non-document app with multiple windows | **Application-modal** Save Changes alert | User confirms or cancels the app-wide save |
+| Quit with multiple unsaved documents | **Application-modal Review Changes** alert | Discard Changes quits without saving; Cancel stops Quit; Review Changes walks each unsaved document with a Save Before Quitting sheet |
+| Open a document | **Application-modal** Open dialog, title includes app name | Open (default) opens selection; Cancel closes dialog; Open Recent bypasses dialog |
+| Choose a target item | Choose dialog (sheet optional), task-specific title | One Choose dialog at a time; Cancel returns without selecting |
+| Print a document | **Print sheet** with features pop-up and PDF pop-down | Print or cancel; preferences saved with document |
+| Page Setup | Page Setup dialog (Figure 14-64) | Scaling/orientation saved with the document |
+
 <a id="dialogs-for-saving-closing-and-quitting"></a>
 
-## Dialogs for Saving, Closing, and Quitting (pp. 246–251)
+## Dialogs for Saving, Closing, and Quitting (pp. 246-251)
 
 This section covers the standard dialogs/sheets used when a user saves a document for the first time, closes
 a document, or quits an application. (p. 246)
